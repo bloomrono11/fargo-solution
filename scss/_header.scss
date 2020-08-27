@@ -1,0 +1,119 @@
+.dropdown {
+  .dropdown-menu {
+    .dropdown-item {
+      font-weight: 600 !important;
+
+      &:hover, &:focus {
+        background: linear-gradient(to right, #ffd916 40%, orange) !important;
+        color: #3d9fa9 !important;
+        transition: ease-in 0.8s;
+      }
+    }
+  }
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+}
+
+div.dropdown-menu {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.img-brand-custom {
+  //width:20% !important;
+  //height: 20% !important;
+  padding-top: .5rem !important;
+}
+
+.w-20 {
+  max-width: 20% !important;
+  width: 20% !important;
+}
+
+$logo-color: rgb(0, 176, 80);
+a.navbar-brand {
+  text-align: left;
+
+  img {
+    //IMP to align brand and text
+    margin-top: -.75rem !important;
+  }
+
+  div {
+    display: inline;
+  }
+
+  div p {
+    display: inherit !important;
+    color: $logo-color;
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+  &:hover {
+    color: $logo-color;
+    text-decoration: underline;
+  }
+}
+
+// Note side nav style
+/* Only for snippet */
+.double-nav .breadcrumb-dn {
+  color: #fff;
+}
+
+.side-nav-btn-position {
+  position: fixed;
+  left: 5%;
+
+  a i {
+    padding: .25rem;
+  }
+
+  a:hover {
+    i {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+div#slide-out {
+  a.sidenav-logo {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Engravers MT", serif;
+    letter-spacing: .2rem;
+    span {
+      opacity: .6;
+    }
+    span:first-child{
+      color:green;
+      text-transform: lowercase;
+    }
+    span:nth-child(2){
+      color:lightseagreen;
+    }
+    span:last-child{
+      color:greenyellow;
+    }
+    &:hover{
+      span{
+        opacity: 1;
+      }
+    }
+  }
+
+  ul.social {
+    i {
+      color: green;
+    }
+  }
+}

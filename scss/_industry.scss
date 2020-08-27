@@ -1,0 +1,30 @@
+#industryMain {
+
+  .industry-header {
+    h2.industry-heading {
+      @extend h2.home-content-heading;
+    }
+  }
+
+  #technologyContainer, #healthCareContainer, #financialContainer, #retailContainer, #telecomContainer, #govtContainer, #manufactureContainer {
+    font-size: 16px;
+    div i {
+      color: lightseagreen;
+    }
+    p span {
+      margin: 0;
+      padding: 0;
+    }
+    p.no-space-parah {
+      margin: 0;
+      padding-left: .5rem;
+    }
+
+    p {
+      margin: 0.5rem 0 0.5rem 0;
+    }
+  }
+}
+
+
+

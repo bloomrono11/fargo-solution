@@ -1,0 +1,42 @@
+#aboutUsMain {
+  p > strong {
+    font-weight: bold !important;
+  }
+}
+
+ul.about-us-custom-list {
+  font-size: 13px;
+  text-align: left;
+  padding-left: 0;
+  font-weight: 600;
+  li {
+    padding: .5rem;
+    list-style: none;
+    border: 1px solid indianred;
+    border-top: 0;
+    &:hover {
+      color: orange !important;
+    }
+    &:first-child {
+      border-top: 1px solid indianred;
+    }
+    &:last-child {
+      //border-top: 0;
+    }
+
+    &:after {
+      font-family: "Font Awesome 5 Free", sans-serif;
+      font-size: 20px;
+      color: lightseagreen;
+      content: "\f058";
+      position: absolute;
+      right: 5%;
+      margin-top: -6px;
+    }
+  }
+}
+
+.about-us-mission {
+  font-size: 20px;
+  font-weight: bold;
+}

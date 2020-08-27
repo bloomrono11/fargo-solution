@@ -1,0 +1,245 @@
+$(document).ready(function () {
+
+    header.initialize();
+
+});
+let header = {
+
+    dividerClass: 'hr-light m-0',
+    navBarId: 'fsiNavBar',
+    navBarTabsId: 'fsiNavBarTabs',
+    navbarClass: 'navbar navbar-expand-lg navbar-orange scrolling-navbar fixed-top',
+    logoLocation:'/img/logo/logo.png',
+
+    initialize: function () {
+
+        let html;
+        html = this.getNavBarHeader();
+
+        let header = $('#header');
+
+        if (header !== undefined && header.length > 0) {
+            header.prepend(html);
+            // console.log(html);
+        }
+
+        this.listenNavBarTabActive();
+    },
+
+    /**
+     * This method is to create the navbar
+     * @returns {string}
+     */
+    getNavBarHeader: function () {
+        let id = 'fsiNavCollapse';
+        let navbarClass = this.navbarClass;
+        let header =
+            '    <!-- Note main header, Navbar-->\n' +
+            '    <nav class="' + navbarClass + '" id="' + this.navBarId + '">\n' +
+            '        <!-- Note Additional container -->\n' +
+            '        <div class="container p-0">\n';
+        //Note add nav brand
+        header += this.getNavBarBrand();
+
+        //Note add the nab bar collapsible button
+        header += this.getNavBarCollapsibleButton(id) + '\n';
+
+        //Note add the nav links to the inner navbar then to the main navbar
+        header += this.getNavBar(id);
+
+        //Note close any additional containers and navbar finally
+        header += '        </div>\n' +
+            '        <!-- Note Close Additional container -->\n' +
+            '    </nav>\n' +
+            '    <!--/.Navbar-->';
+        return header;
+    },
+
+    getNavBarBrand: function () {
+
+        //Note add the comments for the tags
+        let html = '            <!-- Note Navbar brand -->\n' +
+            '            <!-- IMP added w-20-per for logo spacing for now-->\n';
+
+        let cssClass = 'navbar-brand w-20 pt-0 text-center', href = '#';
+        html += this.createNavLinkATag(cssClass, href);
+
+        //Note Content to be switched with logo
+        html += '' +
+            '<img src="'+this.logoLocation+'" class="img-brand-custom">\n' +
+            // '<div><p>Fargo Solutions</p></div>' +
+            '</a>\n';
+        return html;
+    },
+
+    /**
+     * This method is the get the collapsible button of navbar
+     * @param id
+     * @returns {string}
+     */
+    getNavBarCollapsibleButton: function (id) {
+        return '  <!-- Note navbar Collapse button -->\n' +
+            '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#' + id + '"\n' +
+            '        aria-controls="' + id + '" aria-expanded="false" aria-label="Toggle navigation">\n' +
+            '        <span class="navbar-toggler-icon"></span>\n</button>\n';
+    },
+
+    /**
+     * This method is to get the navbar
+     * @param id
+     * @returns {string}
+     */
+    getNavBar: function (id) {
+        let html = '\n<!-- Note start collapsible navbar -->\n' +
+            '<div class="collapse navbar-collapse" id="' + id + '">\n' +
+            '   <!-- Links -->\n' +
+            '   <ul class="navbar-nav mr-auto smooth-scroll" id="' + this.navBarTabsId + '">\n';
+        html += this.getNavLinks();
+        html += '\n</ul>\n <!-- Note end nav content -->\n';
+
+        html += this.createNavSocialLinks();
+
+        html += '</div>\n<!-- Note end Collapsible content -->\n';
+
+        return html;
+    },
+    /**
+     * This method is for getting a list of the navlinks that we require
+     *
+     * @returns {string}
+     */
+    getNavLinks: function () {
+        let html = '';
+        html += ' <li class="custom-nav-item">\n' +
+            '                        <!--Dropdown primary-->\n' +
+            '                        <div class="dropdown">\n' +
+            '                            <!--Trigger-->\n' +
+            '                            <a class="nav-link dropdown-toggle" id="dropdownHomeId" data-toggle="dropdown">Home</a>\n' +
+            '                            <!--Menu-->\n' +
+            '                            <div class="dropdown-menu dropdown-primary " id="dropdownHomeNavId">\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="index.html#intro"> Top</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="index.html#introContent"> Information</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="index.html#clientRetention"> Client Feedback</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="index.html#resources">Resources</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="index.html#aboutIndustry"> About</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="index.html#subscription"> Subscription</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="index.html#footer"> End</a>\n' +
+            '                            </div>\n' +
+            '                        </div>\n' +
+            '                    </li>\n';
+
+        //Note service dropdown
+        html +=
+            '                    <li class="custom-nav-item">\n' +
+            '                        <!--<a class="nav-link" href="#examples">Examples</a>-->\n' +
+            '                        <!--Dropdown primary-->\n' +
+            '                        <div class="dropdown">\n' +
+            '                            <!--Trigger-->\n' +
+            '                            <a class="nav-link dropdown-toggle" id="serviceDropDownToggleId"\n' +
+            '                               data-toggle="dropdown">Service</a>\n' +
+            '                            <!--Menu-->\n' +
+            '                            <div class="dropdown-menu dropdown-primary " id="serviceDropDownNavId">\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="services.html#technologyContainer"> Technology</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="services.html#accountingContainer"> Financial Services</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="services.html#engineeringContainer"> E-commerce/Retail</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="services.html#scienceContainer"> Telecoms</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="services.html#healthCareContainer"> Health Care</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="services.html#professionalContainer"> Public Sector</a>\n' +
+            '                                <a class="dropdown-item mdb-dropdownLink-1" href="services.html#educationContainer"> Manufacturing</a>\n' +
+            '                            </div>\n' +
+            '                        </div>\n' +
+            '                    </li>\n';
+
+
+        //Note industry dropdown
+        // html +=
+        //     '                    <li class="custom-nav-item">\n' +
+        //     '                        <!--Dropdown primary-->\n' +
+        //     '                        <div class="dropdown">\n' +
+        //     '                            <!--Trigger-->\n' +
+        //     '                            <a class="nav-link dropdown-toggle" id="dropdownToggleId"\n' +
+        //     '                               data-toggle="dropdown">Industry</a>\n' +
+        //     '                            <!--Menu-->\n' +
+        //     '                            <div class="dropdown-menu dropdown-primary " id="industryDropDownNavId">\n' +
+        //     '                                <a class="dropdown-item mdb-dropdownLink-1" href="industry.html#healthCareContainer"> Health Care</a>\n' +
+        //     '                                <a class="dropdown-item mdb-dropdownLink-1" href="industry.html#technologyContainer"> Technology</a>\n' +
+        //     '                                <a class="dropdown-item mdb-dropdownLink-1" href="industry.html#financialContainer"> Financial Services</a>\n' +
+        //     '                                <a class="dropdown-item mdb-dropdownLink-1" href="industry.html#retailContainer"> E-commerce/Retail</a>\n' +
+        //     '                                <a class="dropdown-item mdb-dropdownLink-1" href="industry.html#telecomContainer"> Telecoms</a>\n' +
+        //     '                                <a class="dropdown-item mdb-dropdownLink-1" href="industry.html#govtContainer"> Public Sector</a>\n' +
+        //     '                                <a class="dropdown-item mdb-dropdownLink-1" href="industry.html#manufactureContainer"> Manufacturing</a>\n' +
+        //     '                            </div>\n' +
+        //     '                        </div>\n' +
+        //     '                    </li>\n';
+
+        html +=
+            '                    <li class="custom-nav-item">\n' +
+            '                        <a class="nav-link" href="careers.html">Career</a>\n' +
+            '                    </li>\n';
+
+        html +=
+            '                    <li class="custom-nav-item">\n' +
+            '                        <a class="nav-link" href="blog.html">Blog</a>\n' +
+            '                    </li>\n';
+
+        html +=
+            '                    <li class="custom-nav-item">\n' +
+            '                        <a class="nav-link" href="about.html">About Us</a>\n' +
+            '                    </li>\n';
+
+        html +=
+            '                    <li class="custom-nav-item">\n' +
+            '                        <a class="nav-link" href="contact.html">Contact</a>\n' +
+            '                    </li>';
+        return html;
+    },
+
+    createNavSocialLinks: function () {
+        let html = '';
+        html += '<!-- Note Social Icon nav links -->\n' +
+            '                <ul class="navbar-nav nav-flex-icons">\n' +
+            '                    <li class="nav-item">\n' +
+            '                        <a class="social-nav-link fb-ic"><i class="fab fa-facebook-f p-2"></i></a>\n' +
+            '                    </li>\n' +
+            '                    <li class="nav-item">\n' +
+            '                        <a class="social-nav-link tw-ic"><i class="fab fa-twitter p-2"></i></a>\n' +
+            '                    </li>\n' +
+            '                    <li class="nav-item ">\n' +
+            '                        <a class="social-nav-link ins-ic"><i class="fab fa-instagram p-2"></i></a>\n' +
+            '                    </li>\n' +
+            '                </ul>';
+        return html;
+    },
+
+    createNavLinkATag: function (cssClass, href) {
+
+        return '<a class="' + cssClass + '" href="' + href + '">';
+    },
+
+    /**
+     * This method is to switch the active navbar on page change via url #{content}
+     */
+    listenNavBarTabActive: function () {
+        let navItems = $('#' + this.navBarTabsId).children('.nav-item');
+        // console.log(navItems);
+        let loc = window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
+        if (loc.indexOf('#') > 1) {
+            loc = loc.substr(0, loc.indexOf('#'));
+        }
+        loc = loc.replace('.html', '');
+
+        $.each(navItems, function (index, item) {
+            let navList = $(item).children('a');
+            $(item).removeClass('active');
+
+            if ($(navList).text().toLowerCase().indexOf(loc) >= 0) {
+                $(item).addClass('active');
+
+            } else if ($(navList).text().toLowerCase().match('home')
+                && loc.toLowerCase().trim() === 'index') {
+                $(item).addClass('active');
+            }
+
+        })
+    }
+};

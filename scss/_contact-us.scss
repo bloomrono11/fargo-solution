@@ -1,0 +1,87 @@
+//Note global available classes
+//IMP they still require the other mdb and bootstrap classes first
+.border-red {
+  border-color: $redd-color !important;
+  border-style: solid !important;
+  border-width: 1px;
+}
+
+.border-red-circle {
+  @extend .border-red;
+  border-radius: 2rem;
+}
+
+.custom-circle {
+  padding: .75rem;
+  @extend .border-red-circle;
+  color: $redd-color;
+}
+
+.custom-circle-map {
+  @extend .custom-circle;
+  padding: .5rem .75rem;
+}
+
+.contact-us-header {
+  h2.contact-heading {
+    @extend h2.home-content-heading;
+  }
+}
+
+$contact-hover-color: orange !important;
+$contact-hover-border-color: $contact-hover-color;
+#contactUsInfo {
+
+  ul > li {
+    p > a {
+      color: black;
+      &:hover {
+        color: $contact-hover-color;
+        text-decoration: underline $contact-hover-color;
+      }
+    }
+    i {
+      &:hover {
+        color: $contact-hover-color;
+        border-color: $contact-hover-border-color;
+      }
+    }
+  }
+}
+
+//Note custom subject select, for the code part please check contect-us.js
+$subject-select-color: blue !important;
+$subject-select-label-color: #4285f4 !important;
+$subject-select-border-color: #4285f4 !important;
+
+div.subject-select {
+
+  select#subjectSelect {
+    background: #fff !important;
+    cursor: default;
+    text-shadow: none;
+    &:focus, &:active {
+      box-shadow: 0 0 1px 0 #4285f4;
+      border-bottom: 1px solid $subject-select-border-color;
+    }
+  }
+  label.active {
+    box-shadow: 0 0 1px 0 #4285f4;
+    border: 1px solid $subject-select-border-color;
+    color: $subject-select-label-color;
+    border-right: transparent;
+  }
+
+  &:after {
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    font-weight: 900;
+    content: "\f0d7";
+    //display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    right: 5%;
+    top: 45%;
+    pointer-events: none;
+    z-index: 5;
+  }
+}

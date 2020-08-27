@@ -1,0 +1,99 @@
+div.footer-social-icons {
+  a > i {
+    transition: ease-in-out 0.8s !important;
+  }
+}
+
+//facebook class
+a.fb-ic {
+  i {
+    color: #42599e;
+  }
+  &:hover {
+    i {
+      color: #fff !important;
+      background-color: #42599e;
+    }
+  }
+}
+
+a.tw-ic {
+  i {
+    color: #55acee;
+  }
+  &:hover {
+    i {
+      color: #fff !important;
+      background-color: #55acee;
+    }
+  }
+}
+
+//note google plus
+a.gplus-ic {
+  i {
+    color: #f00;
+  }
+  &:hover {
+    i {
+      color: #fff !important;
+      background-color: #f00;
+    }
+  }
+}
+
+a.li-ic {
+  i {
+    color: #117eb9;
+  }
+  &:hover {
+    i {
+      color: #fff !important;
+      background-color: #117eb9;
+    }
+  }
+}
+
+a.ins-ic {
+  i {
+    color: black;
+  }
+  &:hover {
+    i {
+      color: white!important;
+      background: radial-gradient(circle farthest-corner at 35% 100%, #fec564, transparent 50%),
+      radial-gradient(circle farthest-corner at 10% 140%, #feda7e, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+      linear-gradient(#6559ca, #bc318f 30%, #e42e66 50%, #fa5332 70%, #ffdc80 100%);
+    }
+  }
+}
+
+div.footer-links {
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin: .25rem 0;
+    a {
+      &:hover {
+        color: orange;
+        border-bottom: 1px solid orange;
+        padding-left: .25rem;
+        transition: ease-in 0.3s;
+      }
+    }
+  }
+  a.home-contact-link {
+    &:hover {
+      color: orange;
+      border-bottom: transparent !important;
+      padding-left: .25rem;
+      transition: ease-in 0.3s;
+    }
+  }
+}

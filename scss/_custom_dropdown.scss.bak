@@ -1,0 +1,5 @@
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: orange !important;
+  color: #3d9fa9 !important;
+  font-weight: bold !important;
+}

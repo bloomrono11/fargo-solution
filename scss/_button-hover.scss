@@ -1,0 +1,43 @@
+.btn-rounded {
+  border-radius: 10em !important;
+}
+
+.btn-hover-primary {
+  &:hover {
+    background-color: $primary-color !important;
+    color: white !important;
+    border-color: transparent !important;
+  }
+}
+
+.btn-hover-purple{
+  &:hover{
+    background-color: white !important;
+    color: $deep-purple-base !important;
+    border: 2px solid $deep-purple-base !important;
+  }
+}
+
+.btn-hover-info{
+  &:hover{
+    background-color: $info-color !important;
+    color: white !important;
+    border-color: transparent !important;
+  }
+}
+
+.btn-hover-warn{
+  &:hover{
+    background-color: $warning-color !important;
+    color: white !important;
+    border-color: transparent !important;
+  }
+}
+
+.btn-hover-alert{
+  &:hover{
+    background-color: $redd-color !important;
+    color: white !important;
+    border-color: transparent !important;
+  }
+}

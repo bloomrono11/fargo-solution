@@ -1,0 +1,12 @@
+// Your custom
+$custom-border-bottom: 1px solid orange;
+
+.navbar-dropdown-active {
+  background-color: $navbar-light-bg-active-color;
+  border-color: orange !important;
+  font-weight: 600 !important;
+  &:hover {
+    //Note hide the border color on hover so as the link color does not get merged
+    border-color: transparent !important;
+  }
+}

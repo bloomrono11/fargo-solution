@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Contact Us |Fargo Solutions</title>
+
+    <!--fav icon-->
+    <link rel="icon" href="img/ico/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Font Awesome 5-->
+    <link href="css/modules/fontawesome.min.css" rel="stylesheet">
+    <link href="css/modules/brands.min.css" rel="stylesheet">
+    <link href="css/modules/regular.min.css" rel="stylesheet">
+    <link href="css/modules/solid.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/fargo-solution.min.css" rel="stylesheet">
+
+</head>
+
+<body id="contactUsBody">
+
+<!--Main Navigation-->
+<header style="height: auto !important; margin-bottom: 5%!important;" id="header">
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5" id="contactUsMain">
+
+    <!--Main container-->
+    <div class="container-fluid no-gutters p-0">
+
+        <!-- Note Contact Us Header container -->
+        <div class="contact-us-header py-5">
+            <div class="container">
+                <h2 class="contact-heading">Contact Us</h2>
+            </div>
+        </div>
+
+        <!-- Note Contact Us container for form and location -->
+        <div class="container p-0">
+            <div class="row pb-4" id="">
+
+                <div class="col-md-8">
+                    <!--Section: Note Contact Form-->
+                    <section class="mb-4">
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-12 mb-md-0 mb-5">
+                                <!--Note to fix the missing php form-->
+                                <form id="contactForm" name="contactForm"
+                                      action="php/contact.php" method="POST">
+
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-md-10">
+                                            <div class="md-form mb-0">
+                                                <i class="fas fa-user prefix"></i>
+                                                <input type="text" id="name" name="name" class="form-control">
+                                                <label for="name" class="">Your name</label>
+                                            </div>
+                                        </div>
+                                        <!--Grid column-->
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <!--Grid column-->
+                                        <div class="col-md-10">
+                                            <div class="md-form mb-0">
+                                                <i class="fas fa-envelope prefix"></i>
+                                                <input type="text" id="email" name="email" class="form-control">
+                                                <label for="email" class="">Your email</label>
+                                            </div>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <div class="md-form mb-0">
+                                                <i class="fas fa-at prefix"></i>
+                                                <input type="text" id="subject" name="subject" class="form-control">
+                                                <label for="subject" class="">Subject</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <!--Grid column-->
+                                        <div class="col-md-10">
+                                            <div class="md-form">
+                                                <i class="fas fa-envelope-open-text prefix"></i>
+                                                <textarea type="text" id="message" name="message" rows="2"
+                                                          class="form-control md-textarea"></textarea>
+                                                <label for="message">Your message</label>
+                                            </div>
+                                        </div>
+                                        <!--Grid column-->
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <!--Note phone number-->
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <!--Grid column-->
+                                        <div class="col-md-10">
+                                            <div class="md-form mb-0">
+                                                <i class="fas fa-phone fa-rotate-90 prefix"></i>
+                                                <input type="number" id="phone" name="phone" class="form-control"/>
+                                                <label for="phone">Phone Number</label>
+                                            </div>
+                                        </div>
+                                        <!--Grid column-->
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <hr class="hr-light">
+                                </form>
+
+                                <div class="text-center text-md-left">
+                                    <button class="btn btn-primary" type="submit" id="formSubmit">Send</button>
+                                </div>
+                                <div class="status" id="status"></div>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                    </section>
+                </div>
+                <!--Grid column-->
+                <div class="col-md-4 text-center">
+
+                    <!--right Header Container-->
+                    <div class="container no-gutters" id="contactUsInfo">
+
+                        <div class="h5 border-bottom-gray-light pb-1">
+                            <span class="border-bottom-red ">Contact Us</span>
+                        </div>
+
+                        <!--Note address details-->
+                        <ul class="list-unstyled mb-0 custom-font">
+
+                            <!--Note physical address-->
+                            <li><i class="fas fa-map-marker-alt fa-2x custom-circle-map"></i>
+                                <div class="font-weight-bold pt-1">Fargo Solutions</div>
+                                <p>623 Main Ave E, Suite 102B<br>
+                                    West Fargo, ND 58078-2008</p>
+                            </li>
+
+                            <!--Note phone-->
+                            <li><i class="fas fa-phone mt-4 fa-2x custom-circle"></i>
+                                <div class="font-weight-bold pt-1">Call Us</div>
+                                <p><a href="tel:+1(952)-362-1332">+1 (952) 223 1332</a></p>
+                            </li>
+
+                            <!--Note email address-->
+                            <li><i class="fas fa-envelope mt-4 fa-2x custom-circle"></i>
+                                <div class="font-weight-bold pt-1">Email Us</div>
+                                <p><a href="mailto:dev@fargosolutions.us">dev@fargosolutions.us</a></p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+
+            <!--Note below is the google map grid row container-->
+            <!--Grid row-->
+            <div class="row pb-4">
+                <!--Grid column-->
+                <div class="col-md-2">
+                </div>
+                <!--Grid column-->
+
+                <!--Note below is the google map iframe-->
+                <!--Grid column-->
+                <div class="col-md-8 col-sm-12">
+                    <!--Note map container -->
+                    <div class="container-fluid m-0 p-0">
+
+                        <!-- Note Google Maps Iframe embedded api call for location-->
+                        <!--IMP enable below line later-->
+                        <iframe id="gmap_canvas" class="w-100" style="height:22em !important;"
+                                src="https://maps.google.com/maps?q=623%20Main%20Ave%20E%2C%20Suite%20102B%20West%20Fargo%2C%20ND%2058078-2008&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                allowfullscreen></iframe>
+                    </div>
+                    <!--Note map container -->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-2">
+                </div><!--Grid column-->
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!--container-->
+
+    </div>
+    <!--Main container-->
+</main>
+<!--Main layout-->
+
+<!-- Footer -->
+<footer id="footer">
+
+</footer>
+<!-- Footer -->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
+
+<script type="text/javascript" src="js/header.min.js"></script>
+<script type="text/javascript" src="js/contact-us.min.js"></script>
+<script type="text/javascript" src="js/footer.min.js"></script>
+</body>
+
+</html>

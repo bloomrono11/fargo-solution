@@ -1,0 +1,82 @@
+$career-list-color:#fff;
+$career-list-active-color:orange;
+$career-list-active-bg-color:rgba(117, 245, 255, 0.5);
+$career-list-hover-color:#171616;
+$career-list-hover-bg-color:#342e2e;
+//red #c82119
+
+ul.career-ul {
+  padding-left: 0;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  margin: 0;
+  background: rgb(243, 243, 243);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  li {
+    padding: 1rem 0 1rem 1.75rem;
+    list-style: none;
+    border-bottom: 1px solid #443f3f;
+    background-color: #342e2e;
+    &:hover {
+      background-color: #171616;
+    }
+    a {
+      color: $career-list-color;
+    }
+    a.active {
+      color: $career-list-active-color;
+      font-weight: 600;
+      &:after{
+        position: absolute;
+        width:0;
+        height:0;
+        content: "";
+        margin-top:-1%;
+        right:0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid $career-list-active-bg-color !important;
+        z-index: 10;
+      }
+    }
+    &.active{
+      background-color: $career-list-active-bg-color !important;
+      z-index:2;
+    }
+
+    a, a.active {
+      padding-left: 10% !important;
+      letter-spacing: .5px;
+      &:before {
+        position: absolute;
+        left: 5%;
+        margin-top: -.15rem;
+        margin-left: 1rem;
+        //top:45%;
+        font-family: "Font Awesome 5 Free", sans-serif;
+        font-weight: 900;
+        content: "\f00c";
+        border: 2px solid $career-list-active-color;
+        padding: 0.05rem 0.2rem 0 0.2rem;
+        border-radius: 3rem;
+      }
+    }
+  }
+}
+
+#careerContent {
+
+  div.col-md-3, div.col-md-5, div.col-sm-12 {
+    background: rgb(243, 243, 243);
+
+    font-size: 16px;
+
+    h4 {
+      padding-top: 1rem;
+      font-weight: bold;
+    }
+  }
+
+}

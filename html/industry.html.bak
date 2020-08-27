@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Services</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Font Awesome 5-->
+    <link href="css/modules/fontawesome.min.css" rel="stylesheet">
+    <link href="css/modules/brands.min.css" rel="stylesheet">
+    <link href="css/modules/regular.min.css" rel="stylesheet">
+    <link href="css/modules/solid.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/fargo-solution.min.css" rel="stylesheet">
+
+</head>
+
+<body id="industryBody">
+
+<!--Main Navigation-->
+<header style="height: auto !important; margin-bottom: 10%!important;" id="header">
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5" id="industryMain">
+
+    <!--Main container-->
+    <div class="container-fluid no-gutters p-0">
+
+        <!--Note Service container for each service are all below-->
+        <div class="container" id="technologyContainer">
+            <!--Note list container-->
+            <div class="container-fluid" id="technologyListContainer"></div>
+        </div>
+
+        <hr class="hr-light">
+        <hr class="hr-light">
+        <div class="container" id="healthCareContainer">
+            <!--Note list container-->
+            <div class="container-fluid" id="healthCareListContainer"></div>
+        </div>
+
+        <hr class="hr-light">
+        <hr class="hr-light">
+        <div class="container" id="financialContainer">
+            <!--Note list container-->
+            <div class="container-fluid" id="financialListContainer"></div>
+        </div>
+
+        <hr class="hr-light">
+        <hr class="hr-light">
+        <div class="container" id="retailContainer">
+            <!--Note list container-->
+            <div class="container-fluid" id="retailListContainer"></div>
+        </div>
+
+        <hr class="hr-light">
+        <hr class="hr-light">
+        <div class="container" id="telecomContainer">
+            <!--Note list container-->
+            <div class="container-fluid" id="telecomListContainer"></div>
+        </div>
+
+        <hr class="hr-light">
+        <hr class="hr-light">
+        <div class="container" id="govtContainer">
+            <!--Note list container-->
+            <div class="container-fluid" id="govtListContainer"></div>
+        </div>
+
+        <hr class="hr-light">
+        <hr class="hr-light">
+        <div class="container" id="manufactureContainer">
+            <!--Note list container-->
+            <div class="container-fluid" id="manufactureListContainer"></div>
+        </div>
+
+        <hr class="hr-light">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 justify-content-center text-center">
+                    <a href="contact.html" class="btn btn-outline-primary btn-hover-primary">Contact Us <i
+                            class="fas fa-address-book"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="hr-light">
+    </div>
+    <!--Main container-->
+</main>
+<!--Main layout-->
+
+<!-- Footer -->
+<footer id="footer">
+
+</footer>
+<!-- Footer -->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
+
+<script type="text/javascript" src="js/header.min.js"></script>
+<script type="text/javascript" src="js/industry.min.js"></script>
+<script type="text/javascript" src="js/footer.min.js"></script>
+</body>
+
+</html>

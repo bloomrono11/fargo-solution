@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Publisher |Fargo Solutions</title>
+
+    <!--fav icon-->
+    <link rel="icon" href="img/ico/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Font Awesome 5-->
+    <link href="css/modules/fontawesome.min.css" rel="stylesheet">
+    <link href="css/modules/brands.min.css" rel="stylesheet">
+    <link href="css/modules/regular.min.css" rel="stylesheet">
+    <link href="css/modules/solid.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/fargo-solution.min.css" rel="stylesheet">
+</head>
+
+<body id="publisherBody" class="scrollbar scrollbar-deep-blue">
+
+<!--Main Navigation-->
+<header style="height: auto !important; margin-bottom: 10%!important;" id="header">
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5" id="careerMain">
+
+    <!--Main container-->
+    <div class="container-fluid no-gutters p-0">
+
+        <!--About Us Header container -->
+        <div class="container">
+            <!-- Heading -->
+            <h2 class="mb-3 home-content-heading">Publisher Sign Up</h2>
+        </div>
+
+        <!-- Career container-->
+        <div class="container p-5 border-rounded blue lighten-5" id="publisherFormContainer">
+            <form id="signUpForm" method="post" action="javascript:void(0)">
+                <!--User part of form-->
+                <div>
+                    <h2 class="text-center pb-3">Apply to our CPA network by submitting your information below.</h2>
+                    <h3 class="text-uppercase text-left"><i class="fas fa-info-circle green-text pr-3"></i>User Details</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="far fa-user prefix"></i>
+                            <input type="text" id="firstName" name="firstName" class="form-control">
+                            <label for="firstName">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="fas fa-user prefix"></i>
+                            <input type="text" id="lastName" name="lastName" class="form-control">
+                            <label for="lastName">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Email and phone -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="fas fa-envelope prefix"></i>
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email">E-mail Address</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="fas fa-phone fa-rotate-90 prefix"></i>
+                            <input type="text" id="phone" name="phone" class="form-control" data-type=number>
+                            <label for="phone">Phone</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Address part of form-->
+                <hr class="hr-blue">
+                <h3 class="text-uppercase text-left"><i class="fas fa-info green-text pr-3"></i>Address Details</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="fas fa-industry prefix"></i>
+                            <input type="text" id="company" name="company" class="form-control">
+                            <label for="company">Company</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">
+
+                            <i class="fas fa-globe-americas prefix"></i>
+                            <input type="search" id="country" name="country" class="form-control mdb-autocomplete">
+                            <button class="mdb-autocomplete-clear">
+                                <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
+                                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                </svg>
+                            </button>
+                            <label for="country" class="active">Country</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="fas fa-address-book prefix"></i>
+                            <input type="text" id="address1" name="address1" class="form-control">
+                            <label for="address1">Address</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="far fa-address-book prefix"></i>
+                            <input type="text" id="address2" name="address2" class="form-control">
+                            <label for="address2">Address Extension</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="far fa-building prefix"></i>
+                            <input type="text" id="city" name="city" class="form-control">
+                            <label for="city">City</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="fab fa-usps prefix"></i>
+                            <input type="text" id="state" name="state" class="form-control">
+                            <label for="state">State</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form">
+                            <i class="fas fa-map-marked-alt prefix"></i>
+                            <input type="text" id="zipcode" name="zipcode" class="form-control" data-type=number>
+                            <label for="zipcode">Zipcode</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Submission button-->
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-unique" id="submit">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--./ Career container-->
+
+        <hr class="hr-light">
+        <!-- Modal button -->
+<!--        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formErrorModal">Launch modal-->
+<!--        </button>-->
+        <!-- Modal button -->
+    </div>
+    <!--Main container-->
+</main>
+<!--Main layout-->
+
+<!-- Footer -->
+<footer id="footer">
+
+</footer>
+<!-- Footer -->
+
+<!--Modal for form error input-->
+
+
+<!-- Central Modal Medium Success -->
+<div class="modal fade" id="formErrorModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered center modal-notify modal-danger" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <p class="heading lead">Form Info Error</p>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body">
+                <div class="text-center">
+                    <i class="fas fa-times fa-5x mb-3 animated rotateIn"></i>
+                    <p class="red-text font-weight-bolder">Please enter valid value</p>
+                    <p id="errorMessage"></p>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <a type="button" class="btn btn-danger" id="errorFormFocusBtn" data-link="firstName">Go to Error<i class="fas fa-exclamation-triangle ml-1 text-white"></i></a>
+                <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- Central Modal Medium Success-->
+<!--Modal-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+
+<script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
+<script type="text/javascript" src="js/header.min.js"></script>
+<script type="text/javascript" src="js/publisher.min.js"></script>
+<script type="text/javascript" src="js/footer.min.js"></script>
+
+</body>
+
+</html>

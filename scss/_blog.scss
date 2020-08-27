@@ -1,0 +1,256 @@
+.blog-cover-font-text {
+}
+
+#blogBody {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+//Note FSI blog intro
+div.blog-intro {
+  background-color: #ddd;
+  text-align: center;
+  padding: 2rem 0;
+  h2, h4 {
+    font-weight: 500;
+  }
+  h2 {
+    color: #222222;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  p {
+    margin: 0 0 1.5rem 0;
+    letter-spacing: .2px;
+  }
+  h4 {
+    color: #ff1812;
+    font-size: 20px;
+    &:before, &:after {
+      content: '"';
+    }
+  }
+}
+
+//Note blog right section question classes
+div.blog-question {
+
+  text-align: left;
+  text-wrap: normal;
+  padding: 0;
+
+  div.blog-question-wrapper {
+    border: 1px solid #ddd;
+    padding: 0;
+    padding-left: 1rem !important;
+    margin-bottom: .75rem !important;
+    &:last-child {
+      padding-bottom: .5rem;
+    }
+  }
+
+  div.blog-q-heading{
+    padding-top: .5rem;
+  }
+
+  div {
+    font-size: 18px;
+    a {
+      color: #337ab7;
+    }
+  }
+  div.blog-q {
+    padding: .25rem 0 !important;
+    a {
+      font-size: 14px;
+      &:hover {
+        color: #dfaf34;
+      }
+    }
+  }
+  div.blog-c {
+    a {
+      font-size: 14px;
+      padding: .25rem 0 !important;
+      &:hover {
+        color: #296293;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.blog-transition-delay {
+  transition: 0.8s ease-out !important;
+}
+
+//Note below are for blog.html classes go to end of file for blog details view class
+.blog {
+
+  color: #3C4858;
+  div.blog-title-footnote{
+    div.flex-row {
+      a, div {
+        padding: 0 .5rem;
+        i{
+          padding-right:0.2rem;
+        }
+      }
+    }
+  }
+
+  //Note blog title color
+  div.blog-title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 1%;
+    a {
+      color:#000;
+      font-weight: 600;
+      text-decoration: none;
+      word-wrap: break-word;
+      &:hover {
+        color:orange;
+        opacity: .75 !important;
+      }
+    }
+  }
+  div.blog-body {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 2% 0;
+    color: #000;
+    span > a.read-more {
+      color: #23527c;
+      &:hover {
+        color: #f5593d;
+      }
+    }
+  }
+  div.blog-end {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 2%;
+    color: #23527c;
+    a {
+      font-weight: 600;
+      &:hover {
+        opacity: .75 !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .blog-top-padding {
+    padding: 80px 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-top-padding {
+    padding: 150px 0 !important;
+  }
+}
+
+//Note below is page button classes
+.page-btn-rounded {
+  border-radius: 10em !important;
+  padding: 0.5rem .8rem !important;
+}
+
+div.font-weight-bold {
+  nav {
+    ul.pagination {
+      li {
+        a {
+          font-weight: bold !important;
+          &:hover {
+            color: white !important;
+            background-color: teal !important;
+            //Note dont use the border, makes the entire screen look bad
+            //border: 1px solid teal !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//.blog-page-btn-active{
+//  color: white !important;
+//  background-color: indigo!important;
+//  border: 1px solid indigo !important;
+//}
+//Note below is for each blog details view as html
+#blogBody1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+  h2.blog-heading {
+    font-weight: bold;
+    font-size: 28px
+  }
+  div.blog-content-heading {
+    font-weight: bold;
+    font-size: 26px;
+    padding-bottom: .25rem;
+  }
+  div.list-group {
+    padding-bottom: .75rem;
+  }
+  ul {
+    margin: -.5rem 0 .5rem 0;
+  }
+  div.flex-row {
+    a, div {
+      padding: 0 .5rem;
+    }
+  }
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  a.blog-contact-us-link {
+    color: #dddddd;
+    background-color: red;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    font-weight: bold;
+    font-size: 18px;
+
+    &:hover {
+      color: red;
+      background-color: #dddddd;
+    }
+  }
+
+  div.blog-content-end {
+    text-align: center;
+    p {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  //Note below is to change each blog link color within each parah
+  //p > a {
+  //  color: orange !important;
+  //}
+}
+
+div.container{
+  p > a {
+    font-weight: bolder;
+    &:hover{
+      color:orange !important;
+      text-decoration: none!important;
+      transition-delay: 0.2s;
+    }
+  }
+}

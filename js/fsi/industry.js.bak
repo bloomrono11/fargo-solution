@@ -1,0 +1,338 @@
+$(document).ready(function () {
+    industry.initialize();
+});
+
+let industry = {
+
+    //Note to change the css for the industry menu use the ids as ref from here then go to industry.scss to customize
+    containerIds: ['technologyContainer', 'healthCareContainer', 'financialContainer', 'retailContainer', 'telecomContainer',
+        'govtContainer', 'manufactureContainer'],
+    listContainerIds: ['technologyListContainer', 'healthCareListContainer', 'financialListContainer', 'retailListContainer',
+        'telecomListContainer', 'govtListContainer', 'manufactureListContainer'],
+    headers: ['Technology Recruitment', 'Health Care – Clinical Recruitment', 'Financial Services Recruitment',
+        'Retail Recruitment', 'Telecom Recruitment', ' Public Sector/State Recruitment', 'Manufacture'],
+
+    technologyParahs: ['Information Technology is a dynamic industry, displaying at some levels little barrier to entry, and at other levels intense global competition among some the world’s most highly-valued brands.',
+        'Regardless, the industry is constantly driven by innovation and speed-to-market, by demanding users. For success, technology companies must address the challenge of globalization and competition, revenue and margin pressures due to current or would-be investors, and demand accelerated innovation.',
+        'Our specialized recruiters who come from the industry have deep domain expertise and help companies to acquire and manage the talent they need to adapt in a changing industry, meet everyday challenges, and capitalize on new opportunities.',
+        'USTECH offers Technology clients an integrated approach – aligning talent strategy with business strategy – providing enterprise-wide talent on-demand that can support:'],
+    technologyList: ['Accounting/Finance',
+        'HR/Legal',
+        'Administrative/Clerical',
+        'Marketing & Communications',
+        'Information Technology Training',
+        'Supply Chain, Procurement, & Logistics',
+        'Research & Development',
+        'Regulatory',
+        'Engineering',
+        'Testing & Quality Assurance',
+        'Customer Service/Call Center',
+        'Project Management',
+        'Strategy & Operations',
+        'Sourcing & Inventory Management',
+        'Data Warehousing',
+        'Change & Incident Management'],
+
+    healthCareParahs: ['The Pharmaceutical and Life Sciences industries operate with significant operational and regulatory challenges, have the constant demand to release new and innovative products and face increasing pressure to demonstrate profitability. At the same time, patent protection is eroding, consumers are looking for lower-cost alternatives, and competition is fierce.',
+        'To succeed today, pharmaceutical and life sciences companies need to overcome industry challenges, create product differentiation, and drive sustainable growth. We help pharmaceutical and life sciences companies acquire and manage the talent they need to meet the challenges of a changing industry and gain a competitive advantage.',
+        'USTECH offers Pharmaceutical/Life Sciences client an integrated approach – aligning talent strategy with business strategy – providing enterprise-wide talent on-demand that can support:'],
+    healthCareList: ['Accounting/Finance',
+        'HR/Legal',
+        'Administrative/Clerical',
+        'Marketing & Communications',
+        'Information Technology',
+        'Supply Chain, Procurement, and Logistics',
+        'Research & Development',
+        'Regulatory',
+        'Clinical Data',
+        'Chemistry',
+        'BioChemistry',
+        'Nursing',
+        'Scientific',
+        'Packaging & Labels',
+        'Healthcare Compliancy & Privacy',
+        'Quality Assurance'],
+
+    financialParahs: ['All the financial services companies are consumed with efforts to satisfy the growing demands by regulators (e.g. Federal Reserve Board, SEC) for Basel, Dodd-Frank, CCAR, SOX and future requirements while having enough budget for innovation creating a competitive advantage.',
+        'Fargo Solutions recognizes more than ever that Commercial Banks, Investment Banks, Asset Managers, Insurance Companies, whether public or private need to tightly integrate business plans with non-discretionary guidelines set by government agencies. Essentially becoming more proactive than reactive for handling market problems by creating:',
+        '<span>Proper controls and processes</span>',
+        '<span>Better instrumentation for monitoring</span>',
+        '<span>Actionable plans for responsiveness to any irregular market, customer, employee, or geopolitical scenario</span>',
+        '<span>Integrated reporting solutions for regulators, shareholders, customers, and management</span>',
+        'We offer Banking and Financial Services clients an integrated approach – aligning talent strategy with business strategy – providing enterprise-wide talent on-demand that can support:'],
+    financialList: ['Accounting/Finance',
+        'HR/Legal',
+        'Administrative/Clerical',
+        'Marketing & Communications',
+        'Information technology',
+        'Supply Chain, Procurement, and Logistics',
+        'Research & Development',
+        'Regulatory',
+        'Insurance/Actuarial',
+        'Credit Operations',
+        'Lending Operations',
+        'Project management',
+        'Risk Management',
+        'Customer Service'],
+
+    retailParahs: ['The best retailers are continually developing new ways to align the customer experience with their business strategy. The Internet has dramatically changed the retail landscape, creating opportunities for new business models and adding new dimensions to brick and mortar retailers. Economics data clearly indicates the consumer behavioral pattern changing from physical location buying to online retailing as well as the marketing, customer service, and inventory management of all retail business. Tangential to the consumer experience changing, all retailers need to be concerned with the proper use of expensive real estate to compete in today’s marketplace.',
+        'We help retailers acquire and manage the talent they need with capabilities in Supply Chain, POS, Merchandising, E-commerce, etc. to help our clients compete and win in today’s retail marketplace.',
+        'USTECH offers Retail clients an integrated approach – aligning talent strategy with business strategy – providing enterprise-wide talent on-demand that can support:'],
+    retailList: ['Accounting/Finance',
+        'HR/Legal',
+        'Administrative/Clerical',
+        'Marketing & Communications',
+        'Information Technology',
+        'Supply Chain, Procurement, & Logistics',
+        'Research & Development',
+        'Regulatory',
+        'Sales',
+        'Design',
+        'Merchandising',
+        'Project Management',
+        'Strategy & Operations'],
+
+    govtParahs: ['We know that as an employer or candidate within the public sector, you require recruitment partner with comprehensive knowledge of this specialist market. You need someone who understands public sector jobs and the geography you operate. We are here to help you in all ways to provide fast and cost-effective services.',
+        'The government and public sector are under great demands and undergoing unprecedented change. Government agencies and public organizations are pressed to improve services to citizens while at the same time taxpayers and interest groups push for budget control and reform.',
+        'To successfully meet the challenges and deal with the conflicts, government, and public sector organizations must transform the way they work to reduce costs and improve the delivery of services. We help organizations throughout the public sector acquire and manage the talent they need to more effectively meet the needs of the purpose and people they serve.',
+        'The areas for which we provide you talented candidates are:'],
+    govtList: ['Accounting, Tax & Treasury',
+        'Marketing',
+        'Technology',
+        'Human Resources',
+        'Procurement & Supply Chain',
+        'Executive Search Legal',
+        'Property & Construction',
+        'Consultancy, Strategy, & Change'],
+
+    telecomParah: ['Telecom companies have opportunities to provide clients with content via television, internet, and telephony, through cable and wireless services. There is significant market pressure to expand while innovating new and economical technology that provide new features, increased reliability, and value-added applications. To do so, they must build additional network capacity to handle increased traffic and deploy the latest technology quickly and economically.',
+        'Our specialized recruiters who come from the industry have deep domain expertise and helps companies to acquire and manage the talent they need to adapt in a changing industry, meet everyday challenges, and capitalize on new opportunities.',
+        'We successfully recruit for all sectors of the telecoms marketplace including Carrier, Systems Integration, Mobile, Call Center, Internet Services, and Networking, etc.',
+        'USTECH offers Telecom clients an integrated approach – aligning talent strategy with business strategy – providing enterprise-wide talent on-demand that can support:'],
+    telecomList: ['Accounting/Finance',
+        'HR/Legal',
+        'Administrative/Clerical',
+        'Marketing and Communications',
+        'Information Technology',
+        'Supply Chain, Procurement, & Logistics',
+        'Research & Development',
+        'Regulatory',
+        'Engineering',
+        'Telephony',
+        'Broadband',
+        'Project Management',
+        'Cellular Operations'],
+
+    manufactureParah: ['Manufacturers are constantly challenged by the market – from local to global – to get the right product to the right buyer at the right price and time.',
+    'Regardless of the product, the marketplace is more demanding than ever, competition is intense, credit is tight, and sustainability is critical.',
+    'To succeed today, manufacturers must address many challenges and market changes, meet customer demands, and continuously improve quality while controlling costs.',
+    'Fargo Solutions helps manufacturers acquire and manage the talent they need to adapt in a changing industry, meet everyday challenges, and gain a competitive advantage.',
+    'Fargo Solutions offers Manufacturing client an integrated approach – aligning talent strategy with business strategy – providing enterprise-wide talent on-demand:'],
+    manufactureList: ['Research and Development',
+    'Engineering and Quality Control',
+    'HR/Legal',
+    'Information Technology',
+    'ISO 9000+ Compliance',
+    'Accounting/Finance',
+    'Intelligence and Analysis',
+    'Administration/Clerical',
+    'Design, Testing, and Evaluation',
+    'Environment Health and Safety',
+    'Marketing and Communications',
+    'Supply Chain and Inventory Control'],
+
+    industryListIconHtml: '<i class="fas fa-check pr-2"></i>',
+    initialize: function () {
+        // this.hideAllContainers();
+        // this.showContainer(this.containerIds[0]);
+        // this.listenOnServiceClickEvents();
+        for (let i = 0; i < this.containerIds.length; i++) {
+            let id = this.containerIds[i];
+            let html = this.createContainerParahs(id);
+            id = $('#' + id);
+            if (id !== undefined && id.length > 0) {
+                id.prepend(html);
+            }
+            // console.log(html);
+        }
+
+        //note create container header
+        for (let i = 0; i < this.headers.length; i++) {
+            let id = this.headers[i];
+            let html = this.createContainerHeader(this.headers[i]);
+            id = $('#' + this.containerIds[i]);
+            if (id !== undefined && id.length > 0) {
+                id.prepend(html);
+            }
+            // console.log(html);
+        }
+
+        for (let i = 0; i < this.listContainerIds.length; i++) {
+            let id = this.listContainerIds[i];
+            let html = this.createListContainers(id);
+            id = $('#' + id);
+            if (id !== undefined && id.length > 0) {
+                id.append(html);
+            }
+            // console.log(html);
+        }
+    },
+    hideAllContainers: function () {
+        $.each(this.containerIds, function (index, item) {
+            $('#' + item).hide();
+        });
+    },
+    showContainer: function (containerId) {
+        $('#' + containerId).show();
+    },
+    listenOnIndustryClickEvents: function () {
+        let industryLeftSideContainer = $('#industryLeftContainer');
+
+        //Note return void if the method fails due to no industry header id found in DOM
+        if (industryLeftSideContainer === undefined) return;
+
+        let links = industryLeftSideContainer.find('div.row>div>a');
+        let me = this;
+        // console.log(links);
+        links.on('click', function (event) {
+
+            event.preventDefault();
+            let target = $(event.target);
+            let containerId = target.attr('href');
+            if (containerId !== undefined && containerId.trim() !== '') {
+                me.hideAllContainers();
+                me.showContainer(containerId.substr(1));
+            }
+            // console.log(target.attr('href'));
+        });
+
+    },
+    /**
+     * The classes names here can be found in {@file ../scss/industry.scss}
+     * @param headerName
+     * @returns {string|string}
+     */
+    createContainerHeader: function (headerName) {
+        let html = '';
+        html = '\n<!-- note Header Container-->\n<div class="industry-header mb-5">\n' +
+            '<h2 class="industry-heading">' + headerName + '</h2>\n' +
+            '</div>';
+        return html;
+    },
+
+    createContainerParahs: function (containerName) {
+        //Note in future want to add customizations
+        let html = '', options = '';
+        html += '<!-- note open row -->\n<div class="row pb-4">\n';
+        switch (containerName) {
+
+            case 'technologyContainer': {
+                html = this.createParahHtml(this.technologyParahs, html, options);
+                break;
+            }
+            case 'healthCareContainer': {
+                html = this.createParahHtml(this.healthCareParahs, html, options);
+                break;
+            }
+            case 'financialContainer': {
+                html = this.createParahHtml(this.financialParahs, html, options);
+                break;
+            }
+            case 'retailContainer': {
+                html = this.createParahHtml(this.retailParahs, html, options);
+                break;
+            }
+            case 'telecomContainer': {
+                html = this.createParahHtml(this.technologyParahs, html, options);
+                break;
+            }
+            case 'govtContainer': {
+                html = this.createParahHtml(this.govtParahs, html, options);
+                break;
+            }
+            case 'manufactureContainer': {
+                html = this.createParahHtml(this.manufactureParah, html, options);
+                break;
+            }
+        }
+        html += '</div><!-- note close row -->';
+        return html;
+    },
+
+    createListContainers: function (containerName) {
+        //Note in future want to add customizations
+        let html = '', options = '';
+        html += '<!-- note open row -->\n<div class="row">\n';
+        switch (containerName) {
+
+            case 'technologyListContainer': {
+                html = this.createListHtml(this.technologyList, html, options);
+                break;
+            }
+            case 'healthCareListContainer': {
+                html = this.createListHtml(this.healthCareList, html, options);
+                break;
+            }
+            case 'financialListContainer': {
+                html = this.createListHtml(this.financialList, html, options);
+                break;
+            }
+            case 'retailListContainer': {
+                html = this.createListHtml(this.retailList, html, options);
+                break;
+            }
+            case 'telecomListContainer': {
+                html = this.createListHtml(this.telecomList, html, options);
+                break;
+            }
+            case 'govtListContainer': {
+                html = this.createListHtml(this.govtList, html, options);
+                break;
+            }
+            case 'manufactureListContainer': {
+                html = this.createListHtml(this.manufactureList, html, options);
+                break;
+            }
+        }
+        html += '</div><!-- note close row -->';
+        return html;
+    },
+
+    createParahHtml: function (dataList, html, options) {
+        let attr;
+        for (let i = 0; i < dataList.length; i++) {
+            html += '<div class="col-md-12 col-sm-12">\n';
+
+            if (dataList[i].startsWith('<span>') === true) {
+                // console.log(dataList[i]);
+                attr = ' class="no-space-parah"';
+            } else {
+                attr = options;
+            }
+            html += '<p ' + attr + ' >';
+            html += dataList[i];
+            html += '</p>';
+            html += '</div><!-- note close col -->\n';
+        }
+        return html;
+    },
+
+    createListHtml: function (dataList, html, options) {
+
+        for (let i = 0; i < dataList.length; i++) {
+            html += '<div class="col-md-6 col-sm-12">\n';
+            html += '<div>';
+            html += this.industryListIconHtml;
+            html += '<span ' + options + ' >';
+            html += dataList[i];
+            html += '</span>';
+            html += '</div>\n</div><!-- note close col -->\n';
+
+            if (i > 0 && i < (dataList.length - 1) && i % 2 !== 0) {
+                html += '</div><!-- note close row -->\n\n';
+                html += '<!-- note open row -->\n<div class="row">\n';
+            }
+        }
+        return html;
+    }
+};

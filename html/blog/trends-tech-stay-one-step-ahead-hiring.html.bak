@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Trends in Tech to Stay One Step Ahead in Hiring | FargoSolutions</title>
+
+    <!--fav icon-->
+    <link rel="icon" href="../img/ico/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Font Awesome 5-->
+    <link href="../css/modules/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/modules/brands.min.css" rel="stylesheet">
+    <link href="../css/modules/regular.min.css" rel="stylesheet">
+    <link href="../css/modules/solid.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../css/fargo-solution.min.css" rel="stylesheet">
+
+</head>
+
+<body id="blogBody1">
+
+<!--Main Navigation-->
+<header style="height: auto !important; margin-bottom: 8%!important;" id="header">
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5" id="blogMain1">
+
+    <!--Note top header container-->
+    <div class="container-fluid no-gutters p-0">
+
+        <!--Note Blog detailed Content Header container -->
+        <div class="container">
+            <!-- Heading -->
+            <h2 class="mb-3 blog-heading">Trends in Tech to Stay One Step Ahead in Hiring</h2>
+            <div class="d-flex flex-row grey-text">
+                <a title="Post by Fargo Solutions" rel="author"><i class="fas fa-user-alt"></i> Fargo Solutions</a>
+                <div><i class="fas fa-calendar-alt"></i> May 1, 2019</div>
+                <a title="Categories"><i class="fas fa-tags"></i> Industry Trends, Recruiting Strategies, Recruitment</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Note img container-->
+    <div class="container pb-4">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 flex-column">
+                <img src="../img/blog/FSI_Blogs-1.png" class="img-fluid">
+            </div>
+        </div>
+
+        <!--Note Blog FAQs container -->
+        <div class="col-md-4 col-sm-12 p-md-0">
+            <!--Note Blog FAQs container -->
+            <div class="blog-question" id="blogQuestionContainer">
+
+            </div>
+            <!--Note Blog FAQs container -->
+        </div>
+        <!--Note Blog FAQs container -->
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 flex-column">
+                <p>In today’s hiring landscape, you need every advantage you can get. With unemployment sitting at
+                    historic lows, competition for talent is raging. Hiring managers must act quickly before another
+                    company snatches talent away.
+                </p>
+                <p>Sorting through applications, screening applicants, and waiting to hear back from department heads
+                    takes valuable time away from recruiters.
+                </p>
+                <p>Recruiting technology enhances the hiring process by:
+                </p>
+
+                <ul>
+                    <li>Organizing</li>
+                    <li> Tracking</li>
+                    <li> Targeting</li>
+                    <li> Non-Bias</li>
+                    <li> Ease-of-use</li>
+                </ul>
+                <p> With the help of tech in recruiting, you’re now able to manage more tasks in less time AND be more
+                    productive. Here’s the latest in tech trends to help you in your hiring process.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 flex-column">
+                <div class="blog-content-heading">Latest in Recruitment Management Systems</div>
+                <p>Some recruiters today can’t fathom the way of recruiting back in the 90s. Remember actual newspapers?
+                    Today,
+                    <a href="https://www.pcworld.idg.com.au/article/633219/latest-recruitment-technology-trends-how-really-use-them/"
+                       target="_blank">70% of recruiting companies are using some form of ATS</a>.
+                </p>
+                <p>The good news is, applicant tracking is big business and continues to see new updates and advanced
+                    software. Today, ATS and CRM applications offer updated onboarding experiences for candidates, the
+                    ability to create quadrant-style matrix plots to distinguish top performers, clean easy to use apps,
+                    and functionality to send targeted, scheduled emails to potential prospective candidates.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 flex-column">
+                <div class="blog-content-heading">Resume Screening Software</div>
+                <p>Yes, <a
+                        href="https://www.experience.com/advice/employers/the-pros-and-cons-of-automated-resume-screenings/"
+                        target="_blank">
+                    there are pros and cons to resume screening software</a>, but the pros far outweigh the cons. Sure
+                    you might miss the diamond in the rough, but you’re also likely reviewing ten highly qualified
+                    candidates, AND you were able to spend half your day sourcing for more leads.
+                </p>
+                <p>Remember that time thing we spoke about earlier? Everyone is going after the same person in this
+                    candidate-driven market. Having quicker access to better candidates will help you reach out to them
+                    faster.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 flex-column">
+                <div class="blog-content-heading">Blockchain is Coming</div>
+                <p>Bitcoin has propelled blockchain technology onto the world’s stage. Blockchain technology instills a
+                    safe, competent system to ensure data is not tampered with by verifying with other like systems.
+                </p>
+                <p>GDPR has gone into effect and recruiters are searching for ways to ensure compliance is met.
+                    Recruiters handle sensitive information every day. Utilizing blockchain puts all info from a
+                    candidate into one place — untampered with and safe — for the recruiter to access and evaluate. This
+                    will provide an environment for <a
+                            href="https://www.forbes.com/sites/adp/2018/03/21/how-the-blockchain-will-change-recruiting/"
+                            target="_blank"> the recruiter to act quicker on a larger scale</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="blog-content-heading">Recruitment Marketing</div>
+                <p>Have you ever wondered what it would be like to identify a qualified candidate without physically
+                    trying? Recruitment marketing can do just that. It accomplishes the following 5 things with
+                    candidates:
+                </p>
+                <div class="list-group font-weight-bold deep-orange-text">
+                    <a class="list-group-item list-group-item-action  list-group-item-info">Builds trust</a>
+                    <a class="list-group-item list-group-item-action  list-group-item-info">Provides insight</a>
+                    <a class="list-group-item list-group-item-action  list-group-item-info">Nurtures relationships</a>
+                    <a class="list-group-item list-group-item-action  list-group-item-info">Generate Leads</a>
+                    <a class="list-group-item list-group-item-action  list-group-item-info">Creates targeted messaging</a>
+                </div>
+                <p>Having this tool-set in your arsenal gives your company an edge to the competition. And with
+                    <a href="https://www.trustradius.com/all-in-one-marketing" target="_blank">all in one marketing
+                        platforms</a>
+                    such as HubSpot, Booker, or GoSquared, you can set up email campaigns, your
+                    blog, social media marketing, and SEO among others.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 flex-column">
+                <div class="blog-content-heading">Fargo Solutions</div>
+                <p>At Fargo Solutions, our portfolio extends from developing tech solutions to staffing across a
+                    multitude of industries. This gives us an in-house advantage of keeping up with the technology
+                    trends of today and tomorrow.
+                </p>
+                <p>If you’re interested in linking up with a specialized staffing firm that knows the market and has the
+                    tools to exceed your expectations, contact us today.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Note Blog End-->
+    <div class="container blog-content-end">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <p>Looking to accelerate your recruiting efforts?</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <a href="../contact.html" class="btn btn-lg blog-contact-us-link">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer Divider-->
+    <hr class="hr-light">
+
+</main>
+<!--Main layout-->
+
+<!-- Footer -->
+<footer id="footer">
+
+</footer>
+<!-- Footer -->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<script type="text/javascript" src="../js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="../js/header.min.js"></script>
+<script type="text/javascript" src="../js/footer.min.js"></script>
+
+</body>
+
+</html>
