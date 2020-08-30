@@ -6852,9 +6852,9 @@ a.btn:not([href]):not([tabindex]):hover {
     .navbar.navbar-orange .navbar-nav .custom-nav-item .nav-link:hover,
     .navbar.navbar-orange .navbar-nav .nav-item .social-nav-link:hover,
     .navbar.navbar-orange .navbar-nav .custom-nav-item .social-nav-link:hover {
-      color: #ae6a12;
+      color: #ea7300;
       border-bottom: 1px solid orange;
-      border-color: #ae6a12; }
+      border-color: #ea7300; }
   .navbar.navbar-orange .breadcrumb .nav-item.active > .nav-link, .navbar.navbar-orange .breadcrumb .active.custom-nav-item > .nav-link, .navbar.navbar-orange .breadcrumb .nav-item.active > .social-nav-link, .navbar.navbar-orange .breadcrumb .active.custom-nav-item > .social-nav-link,
   .navbar.navbar-orange .navbar-nav .nav-item.active > .nav-link,
   .navbar.navbar-orange .navbar-nav .active.custom-nav-item > .nav-link,
@@ -19540,9 +19540,10 @@ header,
   visibility: hidden; }
 
 .top-nav-collapse {
-  background: -webkit-gradient(linear, right top, left bottom, from(#fc1d26), color-stop(70%, #c2414e));
-  background: -o-linear-gradient(top right, #fc1d26, #c2414e 70%);
-  background: linear-gradient(to bottom left, #fc1d26, #c2414e 70%); }
+  background: -webkit-gradient(linear, right top, left bottom, from(#6eaffc), color-stop(70%, #5057c2));
+  background: -o-linear-gradient(top right, #6eaffc, #5057c2 70%);
+  background: linear-gradient(to bottom left, #6eaffc, #5057c2 70%);
+  opacity: .95; }
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {

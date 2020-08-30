@@ -293,7 +293,7 @@ let header = {
             '        <li>' +
             '        <ul class="collapsible collapsible-accordion">\n' +
             '           <li>\n' +
-            '               <a href="health.html" class="collapsible-header waves-effect bg-transparent"><i class="fas fa-user-nurse"></i> Covid\n' +
+            '               <a href="/health.html" class="collapsible-header waves-effect bg-transparent"><i class="fas fa-user-nurse"></i> Covid\n' +
             '               </a>\n' +
             '           </li>\n' +
             '         </ul>' +
