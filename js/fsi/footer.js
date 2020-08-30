@@ -29,6 +29,8 @@ let footer = {
     phone: '+1 (952) 223 1332',
     altPhone: '+1 (952) 223 1332',
     socialLinks: 'Connect With Us',
+    scrollClass:'scrollbar',
+    scrollClassColor:'scrollbar-lady-lips',
     initialize: function () {
 
         let footer = $('#' + this.footerId);
@@ -42,6 +44,7 @@ let footer = {
 
             footer.append(html);
         }
+        this.applyScrollClassToBody();
         // console.log(html);
     },
     getFooterLinks: function () {
@@ -219,6 +222,17 @@ let footer = {
 
     createFooterALinkTag: function (css, href) {
         return '<a class="' + css + '" href="' + href + '">';
+    },
+
+    /**
+     * This method is to apply the scroll bar styles to each html page at load time
+     */
+    applyScrollClassToBody:function () {
+        let body = $(document.body);
+        if(body.hasClass(this.scrollClass)===false){
+            body.addClass(this.scrollClass).addClass(this.scrollClassColor);
+        }
+
     }
 
 };
