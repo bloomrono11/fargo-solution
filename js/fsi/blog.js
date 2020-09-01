@@ -59,8 +59,24 @@ let blog = {
         '5 Skills Needed to Move Up in the Staffing & Recruiting Industry',
         'Changes in Regulations Facing the Financial Services Industry',
         'Eureka! Fostering Innovation in Your Company Culture',
-        'Do Your Homework: How to Evaluate a Potential Employer'],
-    blogQuestionLinks:['/blog/be-one-step-ahead-in-hiring.html'],
+        'Do Your Homework: How to Evaluate a Potential Employer',
+        'Power BI',
+        'Tableau',
+        'Data Analyst',
+        'Business System Analyst',
+        'Mid Range Laptops for IT Consultants'
+    ],
+    blogQuestionLinks:['/blog/be-one-step-ahead-in-hiring.html',
+        '/blog/5-skills-needed-move-staffing-recruiting-industry.html',
+        '/blog/changes-regulations-facing-financial-services-industry.html',
+        '/blog/eureka-fostering-innovation-company-culture.html',
+        '/blog/homework-evaluate-potential-employer.html',
+        '/blog/power-bi.html',
+        '/blog/tableau.html',
+        '/blog/why-be-data-analyst.html',
+        '/blog/why-choose-business-system-analyst.html',
+        '/blog/mid-range-laptops.html'
+    ],
     blogCategoryTypes: [
         'Company News',
         'Diversity',
@@ -136,12 +152,18 @@ let blog = {
 
     /**
      * This method creates the template html as a string for each blog question on the right section
-     * @param index
+     * @param index {number} The array index to be used to link to the blog clicked
      * @returns {string}
      */
     createBlogQuestion: function (index) {
-        let html = '', href = this.blogQuestionLinks[0];
-        console.log(href);
+
+        let html = '', href ='#!';
+        try{
+            href= this.blogQuestionLinks[index];
+        } catch (error) {
+            console.warn('Failed to sent blog page');
+        }
+        // console.log(href);
         html += '<div class="' + this.blogQClass + '">';
         html += this.createALinkTagStart('recent-post', href);
         html += this.blogQuestions[index];

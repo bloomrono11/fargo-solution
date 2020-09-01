@@ -244,6 +244,12 @@ let header = {
         return '<a class="' + cssClass + '" href="' + href + '">';
     },
 
+    /**
+     * This method is to create mega side nav bar on top of navbar
+     * Todo the social links are to be linked to their social sites for FSI once the accounts are created on the
+     * todo-- social sites for FSI
+     * @returns {string}
+     */
     getSideNavBar: function () {
         let html = ' <!-- Sidebar navigation -->\n' +
             '    <div id="slide-out" class="side-nav sn-bg-4 fixed">\n' +
@@ -251,7 +257,7 @@ let header = {
             '        <!-- Logo -->\n' +
             '        <li>\n' +
             '          <div class="logo-wrapper waves-light">\n' +
-            '               <a href="#!" class="sidenav-logo flex-center"><span>F</span><span>S</span><span>I</span></a>' +
+            '               <a href="#" class="sidenav-logo flex-center"><span>F</span><span>S</span><span>I</span></a>' +
             // '            <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>\n' +
             '          </div>\n' +
             '        </li>\n' +
@@ -261,9 +267,9 @@ let header = {
             '        <!--Social-->\n' +
             '        <li>\n' +
             '          <ul class="social">\n' +
-            '            <li><a href="#" class="icons-sm fb-ic"><i class="fab fa-facebook-f p-2"> </i></a></li>\n' +
-            '            <li><a href="#" class="icons-sm ins-ic"><i class="fab fa-instagram p-2"> </i></a></li>\n' +
-            '            <li><a href="#" class="icons-sm tw-ic"><i class="fab fa-twitter p-2"> </i></a></li>\n' +
+            '            <li><a  class="icons-sm fb-ic"><i class="fab fa-facebook-f p-2"> </i></a></li>\n' +
+            '            <li><a  class="icons-sm ins-ic"><i class="fab fa-instagram p-2"> </i></a></li>\n' +
+            '            <li><a  class="icons-sm tw-ic"><i class="fab fa-twitter p-2"> </i></a></li>\n' +
             '          </ul>\n' +
             '        </li>\n' +
             '        <!--/Social-->\n';
@@ -272,15 +278,15 @@ let header = {
             '        <!-- Side navigation links -->\n' +
             '        <li>\n' +
             '          <ul class="collapsible collapsible-accordion">\n' +
-            '            <li><a class="collapsible-header waves-effect arrow-r" id="careerCollapseBtn"><i class="fas fa-chevron-right"></i> Career\n' +
+            '            <li><a class="collapsible-header waves-effect arrow-r" id="careerCollapseBtn"><i class="fas fa-chevron-right"></i> Employment\n' +
             '               <i class="fas fa-angle-down rotate-icon"></i></a>\n' +
             '              <div class="collapsible-body">\n' +
             '                <ul>\n' +
-            '                  <li><a href="#" class="waves-effect">Fulltime</a></li>\n' +
-            '                  <li><a href="#" class="waves-effect">Direct Hire</a></li>\n' +
-            '                  <li><a href="#" class="waves-effect">Contract to Hire</a></li>\n' +
-            '                  <li><a href="#" class="waves-effect">Contract</a></li>\n' +
-            '                  <li><a href="#" class="waves-effect">Part Time</a></li>\n' +
+            '                  <li><a href="/employment.html#fulltime" class="waves-effect">Fulltime</a></li>\n' +
+            '                  <li><a href="/employment.html#direct" class="waves-effect">Direct Hire</a></li>\n' +
+            '                  <li><a href="/employment.html#contractToHire" class="waves-effect">Contract to Hire</a></li>\n' +
+            '                  <li><a href="/employment.html#contract" class="waves-effect">Contract</a></li>\n' +
+            '                  <li><a href="/employment.html#partTime" class="waves-effect">Part Time</a></li>\n' +
             '                </ul>\n' +
             '              </div>\n' +
             '            </li>\n' +

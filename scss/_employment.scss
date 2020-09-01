@@ -1,0 +1,82 @@
+#employmentMain {
+
+  .employment-header {
+    h2.employment-heading {
+      @extend h2.home-content-heading;
+      padding-top: 1.5rem;
+    }
+  }
+
+  #directContainer {
+    .header {
+      font-size: 26px;
+      line-height: 36px;
+      margin-top: 1%;
+      font-weight: bolder;
+      color: #ff3428;
+
+      //Note below is for flex style
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+
+  #fullTimeContainer{
+    @extend #directContainer;
+    .header {
+      color: orange;
+    }
+  }
+
+  #contractContainer {
+    @extend #directContainer;
+    .header {
+      color: #14804c;
+    }
+  }
+
+  #contractToHireContainer {
+    @extend #directContainer;
+    .header {
+      color: rgba(26, 165, 98, 0.95);
+    }
+  }
+
+  #partTimeContainer {
+    @extend #directContainer;
+    .header {
+      color: #1dbc70;
+    }
+  }
+
+  #fullTimeContainer, #directContainer, #contractToHireContainer, #contractContainer, #partTimeContainer {
+    //Note If you use .navbar with .smooth-scroll, use this code to avoid overlapping navigation to a header.
+    &:before {
+      display: block;
+      content: " ";
+      margin-top: -80px;
+      height: 80px;
+      visibility: hidden;
+    }
+
+    font-size: 16px;
+
+    div.body {
+      p span {
+        margin: 0;
+        padding: 0;
+      }
+
+      p.space-parah {
+        margin: .5rem 0;
+        //padding-left: .5rem;
+      }
+
+      p {
+        margin: 0 0 0 0.5rem;
+      }
+    }
+  }
+}

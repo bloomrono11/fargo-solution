@@ -19566,11 +19566,11 @@ header,
   position: absolute !important;
   bottom: 0 !important; }
 
-h2.home-content-heading, h2.home-industry-heading, h2.home-about-heading, #servicesMain .service-header h2.service-heading, #industryMain .industry-header h2.industry-heading, .contact-us-header h2.contact-heading {
+h2.home-content-heading, h2.home-industry-heading, h2.home-about-heading, #servicesMain .service-header h2.service-heading, #employmentMain .employment-header h2.employment-heading, #industryMain .industry-header h2.industry-heading, .contact-us-header h2.contact-heading {
   font-weight: 700;
   font-size: 48px;
   text-align: center; }
-  h2.home-content-heading:after, h2.home-industry-heading:after, h2.home-about-heading:after, #servicesMain .service-header h2.service-heading:after, #industryMain .industry-header h2.industry-heading:after, .contact-us-header h2.contact-heading:after {
+  h2.home-content-heading:after, h2.home-industry-heading:after, h2.home-about-heading:after, #servicesMain .service-header h2.service-heading:after, #employmentMain .employment-header h2.employment-heading:after, #industryMain .industry-header h2.industry-heading:after, .contact-us-header h2.contact-heading:after {
     content: " ";
     display: block;
     background: #e84429;
@@ -19724,6 +19724,57 @@ h2.home-industry-heading, h2.home-about-heading {
     margin: .5rem 0; }
   #servicesMain #technologyContainer p, #servicesMain #accountingContainer p, #servicesMain #engineeringContainer p, #servicesMain #scienceContainer p, #servicesMain #healthCareContainer p, #servicesMain #professionalContainer p, #servicesMain #educationContainer p {
     margin: 0; }
+
+#employmentMain .employment-header h2.employment-heading {
+  padding-top: 1.5rem; }
+
+#employmentMain #directContainer .header, #employmentMain #fullTimeContainer .header, #employmentMain #contractContainer .header, #employmentMain #contractToHireContainer .header, #employmentMain #partTimeContainer .header {
+  font-size: 26px;
+  line-height: 36px;
+  margin-top: 1%;
+  font-weight: bolder;
+  color: #ff3428;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#employmentMain #fullTimeContainer .header {
+  color: orange; }
+
+#employmentMain #contractContainer .header {
+  color: #14804c; }
+
+#employmentMain #contractToHireContainer .header {
+  color: rgba(26, 165, 98, 0.95); }
+
+#employmentMain #partTimeContainer .header {
+  color: #1dbc70; }
+
+#employmentMain #fullTimeContainer, #employmentMain #directContainer, #employmentMain #fullTimeContainer, #employmentMain #contractContainer, #employmentMain #contractToHireContainer, #employmentMain #partTimeContainer, #employmentMain #contractToHireContainer, #employmentMain #contractContainer, #employmentMain #partTimeContainer {
+  font-size: 16px; }
+  #employmentMain #fullTimeContainer:before, #employmentMain #directContainer:before, #employmentMain #fullTimeContainer:before, #employmentMain #contractContainer:before, #employmentMain #contractToHireContainer:before, #employmentMain #partTimeContainer:before, #employmentMain #contractToHireContainer:before, #employmentMain #contractContainer:before, #employmentMain #partTimeContainer:before {
+    display: block;
+    content: " ";
+    margin-top: -80px;
+    height: 80px;
+    visibility: hidden; }
+  #employmentMain #fullTimeContainer div.body p span, #employmentMain #directContainer div.body p span, #employmentMain #fullTimeContainer div.body p span, #employmentMain #contractContainer div.body p span, #employmentMain #contractToHireContainer div.body p span, #employmentMain #partTimeContainer div.body p span, #employmentMain #contractToHireContainer div.body p span, #employmentMain #contractContainer div.body p span, #employmentMain #partTimeContainer div.body p span {
+    margin: 0;
+    padding: 0; }
+  #employmentMain #fullTimeContainer div.body p.space-parah, #employmentMain #directContainer div.body p.space-parah, #employmentMain #fullTimeContainer div.body p.space-parah, #employmentMain #contractContainer div.body p.space-parah, #employmentMain #contractToHireContainer div.body p.space-parah, #employmentMain #partTimeContainer div.body p.space-parah, #employmentMain #contractToHireContainer div.body p.space-parah, #employmentMain #contractContainer div.body p.space-parah, #employmentMain #partTimeContainer div.body p.space-parah {
+    margin: .5rem 0; }
+  #employmentMain #fullTimeContainer div.body p, #employmentMain #directContainer div.body p, #employmentMain #fullTimeContainer div.body p, #employmentMain #contractContainer div.body p, #employmentMain #contractToHireContainer div.body p, #employmentMain #partTimeContainer div.body p, #employmentMain #contractToHireContainer div.body p, #employmentMain #contractContainer div.body p, #employmentMain #partTimeContainer div.body p {
+    margin: 0 0 0 0.5rem; }
 
 #signUpForm .md-form input[type=text]:focus:not([readonly]), #signUpForm .md-form input[type=search]:focus:not([readonly]) {
   border-bottom-color: darkseagreen !important;
@@ -19989,6 +20040,14 @@ table.power-bi-comparison-table td {
 
 table.power-bi-comparison-table td:nth-child(2), table.power-bi-comparison-table td:nth-child(3), table.power-bi-comparison-table td:nth-child(4) {
   text-align: center; }
+
+div.power-bi-download-links p a {
+  color: #28a745; }
+  div.power-bi-download-links p a:hover {
+    color: grey !important; }
+
+div.power-bi-download-links a img:hover {
+  opacity: .8; }
 
 #aboutUsMain p > strong {
   font-weight: bold !important; }
@@ -20820,7 +20879,7 @@ div.footer-links a.home-contact-link:hover {
 .thin::-webkit-scrollbar {
   width: 6px; }
 
-#homeBody, #servicesBody, #industryBody, #careerBody, #aboutUsBody, #contactUsBody, #privacyBody, #healthBody, #publisherBody, #advertiserBody {
+#homeBody, #servicesBody, #industryBody, #careerBody, #aboutUsBody, #contactUsBody, #privacyBody, #healthBody, #publisherBody, #advertiserBody, #employmentBody {
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
 

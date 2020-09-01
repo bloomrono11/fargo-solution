@@ -3,6 +3,7 @@
 @import "button-hover";
 @import "home";
 @import "services";
+@import "employment";
 @import "publisher";
 @import "industry";
 @import "blog";
@@ -16,7 +17,7 @@
 @import "scrollbar";
 
 
-#homeBody, #servicesBody, #industryBody, #careerBody, #aboutUsBody, #contactUsBody, #privacyBody,#healthBody,#publisherBody,#advertiserBody {
+#homeBody, #servicesBody, #industryBody, #careerBody, #aboutUsBody, #contactUsBody, #privacyBody,#healthBody,#publisherBody,#advertiserBody, #employmentBody {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
