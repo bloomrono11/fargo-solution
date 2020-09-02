@@ -208,7 +208,7 @@ div.font-weight-bold {
 //  border: 1px solid indigo !important;
 //}
 //Note below is for each blog details view as html
-#blogBody1, #power-bi-blog-body {
+#blogBody1, #power-bi-blog-body, #tableau-blog-body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -244,11 +244,11 @@ div.font-weight-bold {
     }
   }
 
-  a {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+  //a {
+  //  &:hover {
+  //    text-decoration: underline;
+  //  }
+  //}
 
   a.blog-contact-us-link {
     color: #dddddd;
@@ -294,6 +294,9 @@ div.container {
 
 .z-index-1000 {
   z-index: 1000 !important;
+}
+.z-index-2000{
+  z-index: 2000;
 }
 
 //Note used to avoid gli

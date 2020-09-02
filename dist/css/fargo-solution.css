@@ -19494,6 +19494,27 @@ button.md-toast-close-button {
   .contact-section .contact .far {
     color: #6b89a5; }
 
+.font-20 {
+  font-size: 20px; }
+
+.font-18 {
+  font-size: 18px; }
+
+.font-16 {
+  font-size: 16px; }
+
+.font-22 {
+  font-size: 22px; }
+
+.font-14 {
+  font-size: 14px; }
+
+.font-24 {
+  font-size: 24px; }
+
+.font-26 {
+  font-size: 26px; }
+
 .btn-rounded {
   border-radius: 10em !important; }
 
@@ -19924,40 +19945,38 @@ div.font-weight-bold nav ul.pagination li a {
     color: white !important;
     background-color: teal !important; }
 
-#blogBody1, #power-bi-blog-body {
+#blogBody1, #power-bi-blog-body, #tableau-blog-body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px; }
-  #blogBody1 .nav-item a, #blogBody1 .custom-nav-item a, #power-bi-blog-body .nav-item a, #power-bi-blog-body .custom-nav-item a {
+  #blogBody1 .nav-item a, #blogBody1 .custom-nav-item a, #power-bi-blog-body .nav-item a, #power-bi-blog-body .custom-nav-item a, #tableau-blog-body .nav-item a, #tableau-blog-body .custom-nav-item a {
     text-decoration: none !important; }
-  #blogBody1 h2.blog-heading, #power-bi-blog-body h2.blog-heading {
+  #blogBody1 h2.blog-heading, #power-bi-blog-body h2.blog-heading, #tableau-blog-body h2.blog-heading {
     font-weight: bold;
     font-size: 28px; }
-  #blogBody1 div.blog-content-heading, #power-bi-blog-body div.blog-content-heading {
+  #blogBody1 div.blog-content-heading, #power-bi-blog-body div.blog-content-heading, #tableau-blog-body div.blog-content-heading {
     font-weight: bold;
     font-size: 24px;
     padding-bottom: .25rem; }
-  #blogBody1 div.list-group, #power-bi-blog-body div.list-group {
+  #blogBody1 div.list-group, #power-bi-blog-body div.list-group, #tableau-blog-body div.list-group {
     padding-bottom: .75rem; }
-  #blogBody1 ul, #power-bi-blog-body ul {
+  #blogBody1 ul, #power-bi-blog-body ul, #tableau-blog-body ul {
     margin: -.5rem 0 .5rem 0; }
-  #blogBody1 div.flex-row a, #blogBody1 div.flex-row div, #power-bi-blog-body div.flex-row a, #power-bi-blog-body div.flex-row div {
+  #blogBody1 div.flex-row a, #blogBody1 div.flex-row div, #power-bi-blog-body div.flex-row a, #power-bi-blog-body div.flex-row div, #tableau-blog-body div.flex-row a, #tableau-blog-body div.flex-row div {
     padding: 0 .5rem; }
-  #blogBody1 a:hover, #power-bi-blog-body a:hover {
-    text-decoration: underline; }
-  #blogBody1 a.blog-contact-us-link, #power-bi-blog-body a.blog-contact-us-link {
+  #blogBody1 a.blog-contact-us-link, #power-bi-blog-body a.blog-contact-us-link, #tableau-blog-body a.blog-contact-us-link {
     color: #dddddd;
     background-color: red;
     text-transform: uppercase;
     letter-spacing: .4px;
     font-weight: bold;
     font-size: 18px; }
-    #blogBody1 a.blog-contact-us-link:hover, #power-bi-blog-body a.blog-contact-us-link:hover {
+    #blogBody1 a.blog-contact-us-link:hover, #power-bi-blog-body a.blog-contact-us-link:hover, #tableau-blog-body a.blog-contact-us-link:hover {
       color: red;
       background-color: #dddddd; }
-  #blogBody1 div.blog-content-end, #power-bi-blog-body div.blog-content-end {
+  #blogBody1 div.blog-content-end, #power-bi-blog-body div.blog-content-end, #tableau-blog-body div.blog-content-end {
     text-align: center; }
-    #blogBody1 div.blog-content-end p, #power-bi-blog-body div.blog-content-end p {
+    #blogBody1 div.blog-content-end p, #power-bi-blog-body div.blog-content-end p, #tableau-blog-body div.blog-content-end p {
       font-size: 22px;
       font-weight: 600;
       letter-spacing: 0.4px; }
@@ -19973,6 +19992,9 @@ div.container p > a {
 
 .z-index-1000 {
   z-index: 1000 !important; }
+
+.z-index-2000 {
+  z-index: 2000; }
 
 div.blog-content-heading::before {
   display: block;
@@ -20048,6 +20070,101 @@ div.power-bi-download-links p a {
 
 div.power-bi-download-links a img:hover {
   opacity: .8; }
+
+#tableau-blog-body div ul {
+  margin: 1rem 0 .5rem; }
+  #tableau-blog-body div ul li a {
+    color: orange;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none; }
+    #tableau-blog-body div ul li a:hover {
+      color: orangered;
+      text-decoration: none !important; }
+
+.tableau-target-links li a {
+  color: orange;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none; }
+  .tableau-target-links li a:hover {
+    color: orangered;
+    text-decoration: none !important; }
+
+.zoom img {
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear; }
+
+#carouselTableauImp .carousel-indicators li {
+  background-color: orange; }
+
+#carouselTableauImp span.carousel-control-prev-icon, #carouselTableauImp span.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: orange; }
+
+.custom-mask-label-p {
+  color: #0ea7a0;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: .25rem; }
+
+p.custom-figure, p.heading-second {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: bold; }
+
+div.tableau-company-links {
+  z-index: 1000; }
+  div.tableau-company-links div.row div.col-md-4:nth-child(2) {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey; }
+  @media (max-width: 767px) {
+    div.tableau-company-links div.col-md-4 {
+      border-color: transparent !important; } }
+  div.tableau-company-links a:hover {
+    opacity: .5; }
+
+table.tableau-comparison-table thead th {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  width: 50%; }
+
+table.tableau-comparison-table td {
+  width: 50%;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px; }
+
+table.tableau-comparison-table td {
+  text-align: left; }
+
+div.tableau-download-links p a {
+  color: #28a745 !important;
+  font-weight: normal; }
+  div.tableau-download-links p a:hover {
+    color: grey !important; }
+
+div.tableau-download-links a img:hover {
+  opacity: .8; }
+
+.z-index-900 {
+  z-index: 900; }
+
+.z-index-901 {
+  z-index: 901; }
+
+.z-index-902 {
+  z-index: 902; }
+
+.z-index-903 {
+  z-index: 902; }
+
+.z-index-1001 {
+  z-index: 1001; }
 
 #aboutUsMain p > strong {
   font-weight: bold !important; }
