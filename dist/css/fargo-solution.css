@@ -19797,6 +19797,10 @@ h2.home-industry-heading, h2.home-about-heading {
   #employmentMain #fullTimeContainer div.body p, #employmentMain #directContainer div.body p, #employmentMain #fullTimeContainer div.body p, #employmentMain #contractContainer div.body p, #employmentMain #contractToHireContainer div.body p, #employmentMain #partTimeContainer div.body p, #employmentMain #contractToHireContainer div.body p, #employmentMain #contractContainer div.body p, #employmentMain #partTimeContainer div.body p {
     margin: 0 0 0 0.5rem; }
 
+#employmentMain .h-400 {
+  height: 50% !important;
+  max-height: 400px !important; }
+
 #signUpForm .md-form input[type=text]:focus:not([readonly]), #signUpForm .md-form input[type=search]:focus:not([readonly]) {
   border-bottom-color: darkseagreen !important;
   -webkit-box-shadow: 0 1px 0 0 darkseagreen !important;
