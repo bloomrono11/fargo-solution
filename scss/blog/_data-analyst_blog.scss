@@ -1,0 +1,93 @@
+#dataAnalystBody {
+  div ul {
+    margin: 1rem 0 .5rem;
+
+    li a {
+      color: orange;
+      font-weight: bolder;
+      font-size: 15px;
+      text-decoration: none;
+
+      &:hover {
+        color: orangered;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  .data-target-links {
+
+    li a {
+      color: orange;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+
+      &:hover {
+        color: orangered;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  .zoom img {
+    transition: all .4s linear;
+  }
+
+  #carouselDataAnalyticsImp {
+
+    .carousel-indicators {
+      li {
+        background-color: orange;
+      }
+    }
+
+    span.carousel-control-prev-icon, span.carousel-control-next-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: orange;
+    }
+
+  }
+
+  #databaseAccordion{
+    p.header-parah{
+      font-weight: bold;
+    }
+  }
+}
+
+#dataAnalystChoresBody {
+
+  h3 {
+    font-weight: bold;
+    color: darkgreen;
+  }
+
+  h4 {
+    font-weight: bolder;
+    color: darkolivegreen;
+  }
+
+  div ul {
+    margin: 1rem 0 .5rem;
+
+    li a {
+      color: orange;
+      font-weight: bolder;
+      font-size: 15px;
+      text-decoration: none;
+
+      &:hover {
+        color: orangered;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  .zoom img {
+    transition: all .4s linear;
+  }
+
+}

@@ -19949,38 +19949,38 @@ div.font-weight-bold nav ul.pagination li a {
     color: white !important;
     background-color: teal !important; }
 
-#blogBody1, #power-bi-blog-body, #tableau-blog-body {
+#blogBody1, #powerBIBlogBody, #tableauBlogBody, #dataAnalystBody, #dataAnalystChoresBody {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px; }
-  #blogBody1 .nav-item a, #blogBody1 .custom-nav-item a, #power-bi-blog-body .nav-item a, #power-bi-blog-body .custom-nav-item a, #tableau-blog-body .nav-item a, #tableau-blog-body .custom-nav-item a {
+  #blogBody1 .nav-item a, #blogBody1 .custom-nav-item a, #powerBIBlogBody .nav-item a, #powerBIBlogBody .custom-nav-item a, #tableauBlogBody .nav-item a, #tableauBlogBody .custom-nav-item a, #dataAnalystBody .nav-item a, #dataAnalystBody .custom-nav-item a, #dataAnalystChoresBody .nav-item a, #dataAnalystChoresBody .custom-nav-item a {
     text-decoration: none !important; }
-  #blogBody1 h2.blog-heading, #power-bi-blog-body h2.blog-heading, #tableau-blog-body h2.blog-heading {
+  #blogBody1 h2.blog-heading, #powerBIBlogBody h2.blog-heading, #tableauBlogBody h2.blog-heading, #dataAnalystBody h2.blog-heading, #dataAnalystChoresBody h2.blog-heading {
     font-weight: bold;
     font-size: 28px; }
-  #blogBody1 div.blog-content-heading, #power-bi-blog-body div.blog-content-heading, #tableau-blog-body div.blog-content-heading {
+  #blogBody1 div.blog-content-heading, #powerBIBlogBody div.blog-content-heading, #tableauBlogBody div.blog-content-heading, #dataAnalystBody div.blog-content-heading, #dataAnalystChoresBody div.blog-content-heading {
     font-weight: bold;
     font-size: 24px;
     padding-bottom: .25rem; }
-  #blogBody1 div.list-group, #power-bi-blog-body div.list-group, #tableau-blog-body div.list-group {
+  #blogBody1 div.list-group, #powerBIBlogBody div.list-group, #tableauBlogBody div.list-group, #dataAnalystBody div.list-group, #dataAnalystChoresBody div.list-group {
     padding-bottom: .75rem; }
-  #blogBody1 ul, #power-bi-blog-body ul, #tableau-blog-body ul {
+  #blogBody1 ul, #powerBIBlogBody ul, #tableauBlogBody ul, #dataAnalystBody ul, #dataAnalystChoresBody ul {
     margin: -.5rem 0 .5rem 0; }
-  #blogBody1 div.flex-row a, #blogBody1 div.flex-row div, #power-bi-blog-body div.flex-row a, #power-bi-blog-body div.flex-row div, #tableau-blog-body div.flex-row a, #tableau-blog-body div.flex-row div {
+  #blogBody1 div.flex-row a, #blogBody1 div.flex-row div, #powerBIBlogBody div.flex-row a, #powerBIBlogBody div.flex-row div, #tableauBlogBody div.flex-row a, #tableauBlogBody div.flex-row div, #dataAnalystBody div.flex-row a, #dataAnalystBody div.flex-row div, #dataAnalystChoresBody div.flex-row a, #dataAnalystChoresBody div.flex-row div {
     padding: 0 .5rem; }
-  #blogBody1 a.blog-contact-us-link, #power-bi-blog-body a.blog-contact-us-link, #tableau-blog-body a.blog-contact-us-link {
+  #blogBody1 a.blog-contact-us-link, #powerBIBlogBody a.blog-contact-us-link, #tableauBlogBody a.blog-contact-us-link, #dataAnalystBody a.blog-contact-us-link, #dataAnalystChoresBody a.blog-contact-us-link {
     color: #dddddd;
     background-color: red;
     text-transform: uppercase;
     letter-spacing: .4px;
     font-weight: bold;
     font-size: 18px; }
-    #blogBody1 a.blog-contact-us-link:hover, #power-bi-blog-body a.blog-contact-us-link:hover, #tableau-blog-body a.blog-contact-us-link:hover {
+    #blogBody1 a.blog-contact-us-link:hover, #powerBIBlogBody a.blog-contact-us-link:hover, #tableauBlogBody a.blog-contact-us-link:hover, #dataAnalystBody a.blog-contact-us-link:hover, #dataAnalystChoresBody a.blog-contact-us-link:hover {
       color: red;
       background-color: #dddddd; }
-  #blogBody1 div.blog-content-end, #power-bi-blog-body div.blog-content-end, #tableau-blog-body div.blog-content-end {
+  #blogBody1 div.blog-content-end, #powerBIBlogBody div.blog-content-end, #tableauBlogBody div.blog-content-end, #dataAnalystBody div.blog-content-end, #dataAnalystChoresBody div.blog-content-end {
     text-align: center; }
-    #blogBody1 div.blog-content-end p, #power-bi-blog-body div.blog-content-end p, #tableau-blog-body div.blog-content-end p {
+    #blogBody1 div.blog-content-end p, #powerBIBlogBody div.blog-content-end p, #tableauBlogBody div.blog-content-end p, #dataAnalystBody div.blog-content-end p, #dataAnalystChoresBody div.blog-content-end p {
       font-size: 22px;
       font-weight: 600;
       letter-spacing: 0.4px; }
@@ -19988,14 +19988,29 @@ div.font-weight-bold nav ul.pagination li a {
 div.container p > a {
   font-weight: bolder; }
   div.container p > a:hover {
-    color: orange !important;
+    color: orange;
     text-decoration: none !important;
     -webkit-transition-delay: 0.2s;
          -o-transition-delay: 0.2s;
             transition-delay: 0.2s; }
 
+.z-index-900 {
+  z-index: 900; }
+
+.z-index-901 {
+  z-index: 901; }
+
+.z-index-902 {
+  z-index: 902; }
+
+.z-index-903 {
+  z-index: 902; }
+
 .z-index-1000 {
   z-index: 1000 !important; }
+
+.z-index-1001 {
+  z-index: 1001; }
 
 .z-index-2000 {
   z-index: 2000; }
@@ -20006,6 +20021,12 @@ div.blog-content-heading::before {
   margin-top: -80px;
   height: 80px;
   visibility: hidden; }
+
+p > a.contact-us-link, a.contact-us-link {
+  color: grey;
+  font-weight: bolder; }
+  p > a.contact-us-link:hover, a.contact-us-link:hover {
+    color: red !important; }
 
 .power-bi-target-links li a {
   color: orange;
@@ -20075,14 +20096,14 @@ div.power-bi-download-links p a {
 div.power-bi-download-links a img:hover {
   opacity: .8; }
 
-#tableau-blog-body div ul {
+#tableauBlogBody div ul {
   margin: 1rem 0 .5rem; }
-  #tableau-blog-body div ul li a {
+  #tableauBlogBody div ul li a {
     color: orange;
     font-weight: bolder;
     font-size: 15px;
     text-decoration: none; }
-    #tableau-blog-body div ul li a:hover {
+    #tableauBlogBody div ul li a:hover {
       color: orangered;
       text-decoration: none !important; }
 
@@ -20155,20 +20176,66 @@ div.tableau-download-links p a {
 div.tableau-download-links a img:hover {
   opacity: .8; }
 
-.z-index-900 {
-  z-index: 900; }
+#dataAnalystBody div ul {
+  margin: 1rem 0 .5rem; }
+  #dataAnalystBody div ul li a {
+    color: orange;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none; }
+    #dataAnalystBody div ul li a:hover {
+      color: orangered;
+      text-decoration: none !important; }
 
-.z-index-901 {
-  z-index: 901; }
+#dataAnalystBody .data-target-links li a {
+  color: orange;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none; }
+  #dataAnalystBody .data-target-links li a:hover {
+    color: orangered;
+    text-decoration: none !important; }
 
-.z-index-902 {
-  z-index: 902; }
+#dataAnalystBody .zoom img {
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear; }
 
-.z-index-903 {
-  z-index: 902; }
+#dataAnalystBody #carouselDataAnalyticsImp .carousel-indicators li {
+  background-color: orange; }
 
-.z-index-1001 {
-  z-index: 1001; }
+#dataAnalystBody #carouselDataAnalyticsImp span.carousel-control-prev-icon, #dataAnalystBody #carouselDataAnalyticsImp span.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: orange; }
+
+#dataAnalystBody #databaseAccordion p.header-parah {
+  font-weight: bold; }
+
+#dataAnalystChoresBody h3 {
+  font-weight: bold;
+  color: darkgreen; }
+
+#dataAnalystChoresBody h4 {
+  font-weight: bolder;
+  color: darkolivegreen; }
+
+#dataAnalystChoresBody div ul {
+  margin: 1rem 0 .5rem; }
+  #dataAnalystChoresBody div ul li a {
+    color: orange;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none; }
+    #dataAnalystChoresBody div ul li a:hover {
+      color: orangered;
+      text-decoration: none !important; }
+
+#dataAnalystChoresBody .zoom img {
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear; }
 
 #aboutUsMain p > strong {
   font-weight: bold !important; }

@@ -208,7 +208,7 @@ div.font-weight-bold {
 //  border: 1px solid indigo !important;
 //}
 //Note below is for each blog details view as html
-#blogBody1, #power-bi-blog-body, #tableau-blog-body {
+#blogBody1, #powerBIBlogBody, #tableauBlogBody, #dataAnalystBody,#dataAnalystChoresBody {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -285,17 +285,38 @@ div.container {
     font-weight: bolder;
 
     &:hover {
-      color: orange !important;
+      color: orange;
       text-decoration: none !important;
       transition-delay: 0.2s;
     }
   }
 }
 
+.z-index-900 {
+  z-index: 900;
+}
+
+.z-index-901 {
+  z-index: 901;
+}
+
+.z-index-902 {
+  z-index: 902;
+}
+
+.z-index-903 {
+  z-index: 902;
+}
+
 .z-index-1000 {
   z-index: 1000 !important;
 }
-.z-index-2000{
+
+.z-index-1001 {
+  z-index: 1001;
+}
+
+.z-index-2000 {
   z-index: 2000;
 }
 
@@ -307,6 +328,16 @@ div.blog-content-heading::before {
   height: 80px;
   visibility: hidden;
 }
+p>a.contact-us-link, a.contact-us-link {
+  color: grey;
+  font-weight: bolder;
+
+  &:hover {
+    color: red!important;
+  }
+}
 
 @import "blog/power_bi_blog";
 @import "blog/tableau_blog";
+@import "blog/data-analyst_blog";
+
