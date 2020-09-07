@@ -63,6 +63,13 @@
   h3 {
     font-weight: bold;
     color: darkgreen;
+    &:before{
+      display: block;
+      content: " ";
+      margin-top: -80px;
+      height: 80px;
+      visibility: hidden;
+    }
   }
 
   h4 {

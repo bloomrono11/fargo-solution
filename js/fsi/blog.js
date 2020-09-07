@@ -63,6 +63,7 @@ let blog = {
         'Power BI',
         'Tableau',
         'Data Analyst',
+        'Data Analyst Daily Activities',
         'Business System Analyst',
         'Mid Range Laptops for IT Consultants'
     ],
@@ -74,6 +75,7 @@ let blog = {
         '/blog/power-bi.html',
         '/blog/tableau.html',
         '/blog/why-be-data-analyst.html',
+        '/blog/day-to-day-activities-data-analyst.html',
         '/blog/why-choose-business-system-analyst.html',
         '/blog/mid-range-laptops.html'
     ],
