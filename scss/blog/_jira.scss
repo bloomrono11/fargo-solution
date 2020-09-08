@@ -1,0 +1,51 @@
+#jiraBlogBody{
+
+  .jira-target-links {
+
+    li a {
+      color: orange;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+
+      &:hover {
+        color: orangered;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  #carouselJira {
+
+    .carousel-indicators {
+      li {
+        background-color: orange;
+      }
+    }
+
+    span.carousel-control-prev-icon, span.carousel-control-next-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: orange;
+    }
+
+  }
+
+  p {
+    font-size: 16px;
+  }
+  h5{
+    font-size: 18px;
+    font-weight: bolder;
+    color:grey;
+    border-bottom: 1px dashed grey;
+  }
+  #jiraNewsTable{
+    td{
+      font-size: 15px;
+      font-weight: bolder;
+      padding-left: 1.5rem;
+    }
+  }
+}

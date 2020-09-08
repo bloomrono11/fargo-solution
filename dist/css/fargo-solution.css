@@ -19949,38 +19949,51 @@ div.font-weight-bold nav ul.pagination li a {
     color: white !important;
     background-color: teal !important; }
 
-#blogBody1, #powerBIBlogBody, #tableauBlogBody, #dataAnalystBody, #dataAnalystChoresBody {
+#blogBody1, #powerBIBlogBody, #tableauBlogBody,
+#dataAnalystBody, #dataAnalystChoresBody, #jiraBlogBody {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px; }
-  #blogBody1 .nav-item a, #blogBody1 .custom-nav-item a, #powerBIBlogBody .nav-item a, #powerBIBlogBody .custom-nav-item a, #tableauBlogBody .nav-item a, #tableauBlogBody .custom-nav-item a, #dataAnalystBody .nav-item a, #dataAnalystBody .custom-nav-item a, #dataAnalystChoresBody .nav-item a, #dataAnalystChoresBody .custom-nav-item a {
+  #blogBody1 .nav-item a, #blogBody1 .custom-nav-item a, #powerBIBlogBody .nav-item a, #powerBIBlogBody .custom-nav-item a, #tableauBlogBody .nav-item a, #tableauBlogBody .custom-nav-item a,
+  #dataAnalystBody .nav-item a,
+  #dataAnalystBody .custom-nav-item a, #dataAnalystChoresBody .nav-item a, #dataAnalystChoresBody .custom-nav-item a, #jiraBlogBody .nav-item a, #jiraBlogBody .custom-nav-item a {
     text-decoration: none !important; }
-  #blogBody1 h2.blog-heading, #powerBIBlogBody h2.blog-heading, #tableauBlogBody h2.blog-heading, #dataAnalystBody h2.blog-heading, #dataAnalystChoresBody h2.blog-heading {
+  #blogBody1 h2.blog-heading, #powerBIBlogBody h2.blog-heading, #tableauBlogBody h2.blog-heading,
+  #dataAnalystBody h2.blog-heading, #dataAnalystChoresBody h2.blog-heading, #jiraBlogBody h2.blog-heading {
     font-weight: bold;
     font-size: 28px; }
-  #blogBody1 div.blog-content-heading, #powerBIBlogBody div.blog-content-heading, #tableauBlogBody div.blog-content-heading, #dataAnalystBody div.blog-content-heading, #dataAnalystChoresBody div.blog-content-heading {
+  #blogBody1 div.blog-content-heading, #powerBIBlogBody div.blog-content-heading, #tableauBlogBody div.blog-content-heading,
+  #dataAnalystBody div.blog-content-heading, #dataAnalystChoresBody div.blog-content-heading, #jiraBlogBody div.blog-content-heading {
     font-weight: bold;
     font-size: 24px;
     padding-bottom: .25rem; }
-  #blogBody1 div.list-group, #powerBIBlogBody div.list-group, #tableauBlogBody div.list-group, #dataAnalystBody div.list-group, #dataAnalystChoresBody div.list-group {
+  #blogBody1 div.list-group, #powerBIBlogBody div.list-group, #tableauBlogBody div.list-group,
+  #dataAnalystBody div.list-group, #dataAnalystChoresBody div.list-group, #jiraBlogBody div.list-group {
     padding-bottom: .75rem; }
-  #blogBody1 ul, #powerBIBlogBody ul, #tableauBlogBody ul, #dataAnalystBody ul, #dataAnalystChoresBody ul {
+  #blogBody1 ul, #powerBIBlogBody ul, #tableauBlogBody ul,
+  #dataAnalystBody ul, #dataAnalystChoresBody ul, #jiraBlogBody ul {
     margin: -.5rem 0 .5rem 0; }
-  #blogBody1 div.flex-row a, #blogBody1 div.flex-row div, #powerBIBlogBody div.flex-row a, #powerBIBlogBody div.flex-row div, #tableauBlogBody div.flex-row a, #tableauBlogBody div.flex-row div, #dataAnalystBody div.flex-row a, #dataAnalystBody div.flex-row div, #dataAnalystChoresBody div.flex-row a, #dataAnalystChoresBody div.flex-row div {
+  #blogBody1 div.flex-row a, #blogBody1 div.flex-row div, #powerBIBlogBody div.flex-row a, #powerBIBlogBody div.flex-row div, #tableauBlogBody div.flex-row a, #tableauBlogBody div.flex-row div,
+  #dataAnalystBody div.flex-row a,
+  #dataAnalystBody div.flex-row div, #dataAnalystChoresBody div.flex-row a, #dataAnalystChoresBody div.flex-row div, #jiraBlogBody div.flex-row a, #jiraBlogBody div.flex-row div {
     padding: 0 .5rem; }
-  #blogBody1 a.blog-contact-us-link, #powerBIBlogBody a.blog-contact-us-link, #tableauBlogBody a.blog-contact-us-link, #dataAnalystBody a.blog-contact-us-link, #dataAnalystChoresBody a.blog-contact-us-link {
+  #blogBody1 a.blog-contact-us-link, #powerBIBlogBody a.blog-contact-us-link, #tableauBlogBody a.blog-contact-us-link,
+  #dataAnalystBody a.blog-contact-us-link, #dataAnalystChoresBody a.blog-contact-us-link, #jiraBlogBody a.blog-contact-us-link {
     color: #dddddd;
     background-color: red;
     text-transform: uppercase;
     letter-spacing: .4px;
     font-weight: bold;
     font-size: 18px; }
-    #blogBody1 a.blog-contact-us-link:hover, #powerBIBlogBody a.blog-contact-us-link:hover, #tableauBlogBody a.blog-contact-us-link:hover, #dataAnalystBody a.blog-contact-us-link:hover, #dataAnalystChoresBody a.blog-contact-us-link:hover {
+    #blogBody1 a.blog-contact-us-link:hover, #powerBIBlogBody a.blog-contact-us-link:hover, #tableauBlogBody a.blog-contact-us-link:hover,
+    #dataAnalystBody a.blog-contact-us-link:hover, #dataAnalystChoresBody a.blog-contact-us-link:hover, #jiraBlogBody a.blog-contact-us-link:hover {
       color: red;
       background-color: #dddddd; }
-  #blogBody1 div.blog-content-end, #powerBIBlogBody div.blog-content-end, #tableauBlogBody div.blog-content-end, #dataAnalystBody div.blog-content-end, #dataAnalystChoresBody div.blog-content-end {
+  #blogBody1 div.blog-content-end, #powerBIBlogBody div.blog-content-end, #tableauBlogBody div.blog-content-end,
+  #dataAnalystBody div.blog-content-end, #dataAnalystChoresBody div.blog-content-end, #jiraBlogBody div.blog-content-end {
     text-align: center; }
-    #blogBody1 div.blog-content-end p, #powerBIBlogBody div.blog-content-end p, #tableauBlogBody div.blog-content-end p, #dataAnalystBody div.blog-content-end p, #dataAnalystChoresBody div.blog-content-end p {
+    #blogBody1 div.blog-content-end p, #powerBIBlogBody div.blog-content-end p, #tableauBlogBody div.blog-content-end p,
+    #dataAnalystBody div.blog-content-end p, #dataAnalystChoresBody div.blog-content-end p, #jiraBlogBody div.blog-content-end p {
       font-size: 22px;
       font-weight: 600;
       letter-spacing: 0.4px; }
@@ -20242,6 +20255,38 @@ div.tableau-download-links a img:hover {
   -webkit-transition: all .4s linear;
   -o-transition: all .4s linear;
   transition: all .4s linear; }
+
+#jiraBlogBody .jira-target-links li a {
+  color: orange;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none; }
+  #jiraBlogBody .jira-target-links li a:hover {
+    color: orangered;
+    text-decoration: none !important; }
+
+#jiraBlogBody #carouselJira .carousel-indicators li {
+  background-color: orange; }
+
+#jiraBlogBody #carouselJira span.carousel-control-prev-icon, #jiraBlogBody #carouselJira span.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: orange; }
+
+#jiraBlogBody p {
+  font-size: 16px; }
+
+#jiraBlogBody h5 {
+  font-size: 18px;
+  font-weight: bolder;
+  color: grey;
+  border-bottom: 1px dashed grey; }
+
+#jiraBlogBody #jiraNewsTable td {
+  font-size: 15px;
+  font-weight: bolder;
+  padding-left: 1.5rem; }
 
 #aboutUsMain p > strong {
   font-weight: bold !important; }
