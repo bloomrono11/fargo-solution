@@ -209,7 +209,8 @@ div.font-weight-bold {
 //}
 //Note below is for each blog details view as html
 #blogBody1, #powerBIBlogBody, #tableauBlogBody,
-#dataAnalystBody,#dataAnalystChoresBody, #jiraBlogBody {
+#dataAnalystBody,#dataAnalystChoresBody, #jiraBlogBody,
+#salesForceBlogBody, #officeBlogBody{
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -341,5 +342,7 @@ p>a.contact-us-link, a.contact-us-link {
 @import "blog/power_bi_blog";
 @import "blog/tableau_blog";
 @import "blog/data-analyst_blog";
-@import "blog/jira";
+@import "blog/jira_blog";
+@import "blog/salesforce_blog";
+@import "blog/office_blog";
 

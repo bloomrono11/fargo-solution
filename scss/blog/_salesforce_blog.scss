@@ -1,0 +1,74 @@
+#salesForceBlogBody {
+
+  .blog-content-heading-2 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #656565;
+    letter-spacing: 1px;
+  }
+  .salesforce-target-links {
+    li a {
+      color: orange;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+
+      &:hover {
+        color: orangered;
+        text-decoration: none !important;
+      }
+    }
+  }
+  li > ul {
+    border-left: 5px solid #750000;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: .25rem .5rem;
+    margin-top: .5rem;
+  }
+
+  table {
+    th {
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    tbody {
+      td{
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: .5px;
+        vertical-align: middle;
+      }
+      tr> td:first-child, tr>td:nth-child(2) {
+        width: 20%!important;
+        text-align: center;
+      }
+      tr> td:last-child{
+        width: 60%!important;
+      }
+    }
+  }
+  div.salesforce-download-links {
+
+    p a {
+      color:#28a745;
+      span{
+        color:#2196f3;
+      }
+      &:hover{
+        color:grey !important;
+        span{
+          color:gray;
+        }
+      }
+    }
+    a img {
+      &:hover{
+        opacity: .8;
+      }
+    }
+  }
+}

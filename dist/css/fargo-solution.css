@@ -19950,35 +19950,45 @@ div.font-weight-bold nav ul.pagination li a {
     background-color: teal !important; }
 
 #blogBody1, #powerBIBlogBody, #tableauBlogBody,
-#dataAnalystBody, #dataAnalystChoresBody, #jiraBlogBody {
+#dataAnalystBody, #dataAnalystChoresBody, #jiraBlogBody,
+#salesForceBlogBody, #officeBlogBody {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px; }
   #blogBody1 .nav-item a, #blogBody1 .custom-nav-item a, #powerBIBlogBody .nav-item a, #powerBIBlogBody .custom-nav-item a, #tableauBlogBody .nav-item a, #tableauBlogBody .custom-nav-item a,
   #dataAnalystBody .nav-item a,
-  #dataAnalystBody .custom-nav-item a, #dataAnalystChoresBody .nav-item a, #dataAnalystChoresBody .custom-nav-item a, #jiraBlogBody .nav-item a, #jiraBlogBody .custom-nav-item a {
+  #dataAnalystBody .custom-nav-item a, #dataAnalystChoresBody .nav-item a, #dataAnalystChoresBody .custom-nav-item a, #jiraBlogBody .nav-item a, #jiraBlogBody .custom-nav-item a,
+  #salesForceBlogBody .nav-item a,
+  #salesForceBlogBody .custom-nav-item a, #officeBlogBody .nav-item a, #officeBlogBody .custom-nav-item a {
     text-decoration: none !important; }
   #blogBody1 h2.blog-heading, #powerBIBlogBody h2.blog-heading, #tableauBlogBody h2.blog-heading,
-  #dataAnalystBody h2.blog-heading, #dataAnalystChoresBody h2.blog-heading, #jiraBlogBody h2.blog-heading {
+  #dataAnalystBody h2.blog-heading, #dataAnalystChoresBody h2.blog-heading, #jiraBlogBody h2.blog-heading,
+  #salesForceBlogBody h2.blog-heading, #officeBlogBody h2.blog-heading {
     font-weight: bold;
     font-size: 28px; }
   #blogBody1 div.blog-content-heading, #powerBIBlogBody div.blog-content-heading, #tableauBlogBody div.blog-content-heading,
-  #dataAnalystBody div.blog-content-heading, #dataAnalystChoresBody div.blog-content-heading, #jiraBlogBody div.blog-content-heading {
+  #dataAnalystBody div.blog-content-heading, #dataAnalystChoresBody div.blog-content-heading, #jiraBlogBody div.blog-content-heading,
+  #salesForceBlogBody div.blog-content-heading, #officeBlogBody div.blog-content-heading {
     font-weight: bold;
     font-size: 24px;
     padding-bottom: .25rem; }
   #blogBody1 div.list-group, #powerBIBlogBody div.list-group, #tableauBlogBody div.list-group,
-  #dataAnalystBody div.list-group, #dataAnalystChoresBody div.list-group, #jiraBlogBody div.list-group {
+  #dataAnalystBody div.list-group, #dataAnalystChoresBody div.list-group, #jiraBlogBody div.list-group,
+  #salesForceBlogBody div.list-group, #officeBlogBody div.list-group {
     padding-bottom: .75rem; }
   #blogBody1 ul, #powerBIBlogBody ul, #tableauBlogBody ul,
-  #dataAnalystBody ul, #dataAnalystChoresBody ul, #jiraBlogBody ul {
+  #dataAnalystBody ul, #dataAnalystChoresBody ul, #jiraBlogBody ul,
+  #salesForceBlogBody ul, #officeBlogBody ul {
     margin: -.5rem 0 .5rem 0; }
   #blogBody1 div.flex-row a, #blogBody1 div.flex-row div, #powerBIBlogBody div.flex-row a, #powerBIBlogBody div.flex-row div, #tableauBlogBody div.flex-row a, #tableauBlogBody div.flex-row div,
   #dataAnalystBody div.flex-row a,
-  #dataAnalystBody div.flex-row div, #dataAnalystChoresBody div.flex-row a, #dataAnalystChoresBody div.flex-row div, #jiraBlogBody div.flex-row a, #jiraBlogBody div.flex-row div {
+  #dataAnalystBody div.flex-row div, #dataAnalystChoresBody div.flex-row a, #dataAnalystChoresBody div.flex-row div, #jiraBlogBody div.flex-row a, #jiraBlogBody div.flex-row div,
+  #salesForceBlogBody div.flex-row a,
+  #salesForceBlogBody div.flex-row div, #officeBlogBody div.flex-row a, #officeBlogBody div.flex-row div {
     padding: 0 .5rem; }
   #blogBody1 a.blog-contact-us-link, #powerBIBlogBody a.blog-contact-us-link, #tableauBlogBody a.blog-contact-us-link,
-  #dataAnalystBody a.blog-contact-us-link, #dataAnalystChoresBody a.blog-contact-us-link, #jiraBlogBody a.blog-contact-us-link {
+  #dataAnalystBody a.blog-contact-us-link, #dataAnalystChoresBody a.blog-contact-us-link, #jiraBlogBody a.blog-contact-us-link,
+  #salesForceBlogBody a.blog-contact-us-link, #officeBlogBody a.blog-contact-us-link {
     color: #dddddd;
     background-color: red;
     text-transform: uppercase;
@@ -19986,14 +19996,17 @@ div.font-weight-bold nav ul.pagination li a {
     font-weight: bold;
     font-size: 18px; }
     #blogBody1 a.blog-contact-us-link:hover, #powerBIBlogBody a.blog-contact-us-link:hover, #tableauBlogBody a.blog-contact-us-link:hover,
-    #dataAnalystBody a.blog-contact-us-link:hover, #dataAnalystChoresBody a.blog-contact-us-link:hover, #jiraBlogBody a.blog-contact-us-link:hover {
+    #dataAnalystBody a.blog-contact-us-link:hover, #dataAnalystChoresBody a.blog-contact-us-link:hover, #jiraBlogBody a.blog-contact-us-link:hover,
+    #salesForceBlogBody a.blog-contact-us-link:hover, #officeBlogBody a.blog-contact-us-link:hover {
       color: red;
       background-color: #dddddd; }
   #blogBody1 div.blog-content-end, #powerBIBlogBody div.blog-content-end, #tableauBlogBody div.blog-content-end,
-  #dataAnalystBody div.blog-content-end, #dataAnalystChoresBody div.blog-content-end, #jiraBlogBody div.blog-content-end {
+  #dataAnalystBody div.blog-content-end, #dataAnalystChoresBody div.blog-content-end, #jiraBlogBody div.blog-content-end,
+  #salesForceBlogBody div.blog-content-end, #officeBlogBody div.blog-content-end {
     text-align: center; }
     #blogBody1 div.blog-content-end p, #powerBIBlogBody div.blog-content-end p, #tableauBlogBody div.blog-content-end p,
-    #dataAnalystBody div.blog-content-end p, #dataAnalystChoresBody div.blog-content-end p, #jiraBlogBody div.blog-content-end p {
+    #dataAnalystBody div.blog-content-end p, #dataAnalystChoresBody div.blog-content-end p, #jiraBlogBody div.blog-content-end p,
+    #salesForceBlogBody div.blog-content-end p, #officeBlogBody div.blog-content-end p {
       font-size: 22px;
       font-weight: 600;
       letter-spacing: 0.4px; }
@@ -20287,6 +20300,59 @@ div.tableau-download-links a img:hover {
   font-size: 15px;
   font-weight: bolder;
   padding-left: 1.5rem; }
+
+#salesForceBlogBody .blog-content-heading-2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #656565;
+  letter-spacing: 1px; }
+
+#salesForceBlogBody .salesforce-target-links li a {
+  color: orange;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none; }
+  #salesForceBlogBody .salesforce-target-links li a:hover {
+    color: orangered;
+    text-decoration: none !important; }
+
+#salesForceBlogBody li > ul {
+  border-left: 5px solid #750000;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: .25rem .5rem;
+  margin-top: .5rem; }
+
+#salesForceBlogBody table th {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center; }
+
+#salesForceBlogBody table tbody td {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: .5px;
+  vertical-align: middle; }
+
+#salesForceBlogBody table tbody tr > td:first-child, #salesForceBlogBody table tbody tr > td:nth-child(2) {
+  width: 20% !important;
+  text-align: center; }
+
+#salesForceBlogBody table tbody tr > td:last-child {
+  width: 60% !important; }
+
+#salesForceBlogBody div.salesforce-download-links p a {
+  color: #28a745; }
+  #salesForceBlogBody div.salesforce-download-links p a span {
+    color: #2196f3; }
+  #salesForceBlogBody div.salesforce-download-links p a:hover {
+    color: grey !important; }
+    #salesForceBlogBody div.salesforce-download-links p a:hover span {
+      color: gray; }
+
+#salesForceBlogBody div.salesforce-download-links a img:hover {
+  opacity: .8; }
 
 #aboutUsMain p > strong {
   font-weight: bold !important; }

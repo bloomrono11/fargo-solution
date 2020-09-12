@@ -93,13 +93,13 @@ let footer = {
             '                    <strong>Services</strong>\n' +
             '                </h6>\n' +
             '                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">\n' +
-            '                <p><a href="services.html#technologyContainer"> IT Consulting</a></p>\n' +
-            '                <p><a href="services.html#accountingContainer"> Direct Placements</a></p>\n' +
-            '                <p><a href="services.html#engineeringContainer"> Software Development </a></p>\n' +
-            '                <p><a href="services.html#scienceContainer"> Project Management</a></p>\n' +
-            '                <p><a href="services.html#healthCareContainer"> Online Corporate Training</a></p>\n' +
-            '                <p><a href="services.html#professionalContainer"> Website Development</a></p>\n' +
-            '                <p><a href="services.html#educationContainer"> Education Counselling</a></p>\n' +
+            '                <p><a href="/services.html#technologyContainer"> IT Consulting</a></p>\n' +
+            '                <p><a href="/services.html#accountingContainer"> Direct Placements</a></p>\n' +
+            '                <p><a href="/services.html#engineeringContainer"> Software Development </a></p>\n' +
+            '                <p><a href="/services.html#scienceContainer"> Project Management</a></p>\n' +
+            '                <p><a href="/services.html#healthCareContainer"> Online Corporate Training</a></p>\n' +
+            '                <p><a href="/services.html#professionalContainer"> Website Development</a></p>\n' +
+            '                <p><a href="/services.html#educationContainer"> Education Counselling</a></p>\n' +
             '            </div>\n' +
             '            <!--/.Third column-->\n';
         return html;
