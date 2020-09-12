@@ -1,3 +1,156 @@
-#officeBlogBody{
+#officeBlogBody {
 
+  #carouselOffice, #wordCarousel, #powerPointCarousel,
+  #excelCarousel, #visioCarousel, #outlookCarousel,
+  #oneNoteCarousel, #oneDriveCarousel, #accessCarousel {
+    .carousel-indicators {
+      li {
+        background-color: orange;
+      }
+    }
+
+    span.carousel-control-prev-icon, span.carousel-control-next-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: orange;
+    }
+
+    div.mask {
+      p.parah-mask-text {
+        position: relative;
+        left: 50%;
+        padding-top: 2rem;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Arial Rounded MT Bold", serif;
+      }
+    }
+
+  }
+
+  .slate-blue-text {
+    color: #6A5ACD;
+  }
+
+  .dark-slate-blue-text {
+    color: #483D8B;
+
+  }
+
+  .medium-slate-blue-text {
+    color: #7B68EE;
+  }
+
+  .light-coral-text {
+    color: lightcoral;
+  }
+
+  .palevioletred-text {
+    color: palevioletred;
+  }
+
+
+  .blog-content-heading-2 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #656565;
+    letter-spacing: 1px;
+  }
+
+  .office-target-links {
+    li a {
+      color: orange;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+
+      &:hover {
+        color: orangered;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  li > ul {
+    border-left: 5px solid #750000;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: .25rem .5rem;
+    margin-top: .5rem;
+  }
+
+  table {
+    th {
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    tbody {
+      td {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: .5px;
+        vertical-align: middle;
+      }
+
+      tr > td:first-child, tr > td:nth-child(2) {
+        width: 20% !important;
+        text-align: center;
+      }
+
+      tr > td:last-child {
+        width: 60% !important;
+      }
+    }
+  }
+
+  div.office-download-links {
+
+    p a {
+      color: #28a745;
+
+      span {
+        color: #2196f3;
+      }
+
+      &:hover {
+        color: grey !important;
+
+        span {
+          color: gray;
+        }
+      }
+    }
+
+    a img {
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .header-parah {
+    font-weight: bolder;
+    margin-bottom: 0;
+  }
+
+  div.flex-row2 {
+    @extend .flex-row;
+    a {
+      padding: .75rem;
+      font-weight: bolder;
+      text-shadow: none;
+    }
+    .btn-unique{
+      border: 2px solid transparent;
+      &:hover{
+        color: #880e4f!important;
+        background:white!important;
+        border-color: #880e4f!important;
+      }
+    }
+  }
 }

@@ -19896,9 +19896,9 @@ div.blog-question {
 
 .blog {
   color: #3C4858; }
-  .blog div.blog-title-footnote div.flex-row a, .blog div.blog-title-footnote div.flex-row div {
+  .blog div.blog-title-footnote div.flex-row a, .blog div.blog-title-footnote #officeBlogBody div.flex-row2 a, #officeBlogBody .blog div.blog-title-footnote div.flex-row2 a, .blog div.blog-title-footnote div.flex-row div, .blog div.blog-title-footnote #officeBlogBody div.flex-row2 div, #officeBlogBody .blog div.blog-title-footnote div.flex-row2 div {
     padding: 0 .5rem; }
-    .blog div.blog-title-footnote div.flex-row a i, .blog div.blog-title-footnote div.flex-row div i {
+    .blog div.blog-title-footnote div.flex-row a i, .blog div.blog-title-footnote #officeBlogBody div.flex-row2 a i, #officeBlogBody .blog div.blog-title-footnote div.flex-row2 a i, .blog div.blog-title-footnote div.flex-row div i, .blog div.blog-title-footnote #officeBlogBody div.flex-row2 div i, #officeBlogBody .blog div.blog-title-footnote div.flex-row2 div i {
       padding-right: 0.2rem; }
   .blog div.blog-title {
     font-size: 26px;
@@ -19980,11 +19980,19 @@ div.font-weight-bold nav ul.pagination li a {
   #dataAnalystBody ul, #dataAnalystChoresBody ul, #jiraBlogBody ul,
   #salesForceBlogBody ul, #officeBlogBody ul {
     margin: -.5rem 0 .5rem 0; }
-  #blogBody1 div.flex-row a, #blogBody1 div.flex-row div, #powerBIBlogBody div.flex-row a, #powerBIBlogBody div.flex-row div, #tableauBlogBody div.flex-row a, #tableauBlogBody div.flex-row div,
+  #blogBody1 div.flex-row a, #blogBody1 #officeBlogBody div.flex-row2 a, #officeBlogBody #blogBody1 div.flex-row2 a, #blogBody1 div.flex-row div, #blogBody1 #officeBlogBody div.flex-row2 div, #officeBlogBody #blogBody1 div.flex-row2 div, #powerBIBlogBody div.flex-row a, #powerBIBlogBody #officeBlogBody div.flex-row2 a, #officeBlogBody #powerBIBlogBody div.flex-row2 a, #powerBIBlogBody div.flex-row div, #powerBIBlogBody #officeBlogBody div.flex-row2 div, #officeBlogBody #powerBIBlogBody div.flex-row2 div, #tableauBlogBody div.flex-row a, #tableauBlogBody #officeBlogBody div.flex-row2 a, #officeBlogBody #tableauBlogBody div.flex-row2 a, #tableauBlogBody div.flex-row div, #tableauBlogBody #officeBlogBody div.flex-row2 div, #officeBlogBody #tableauBlogBody div.flex-row2 div,
   #dataAnalystBody div.flex-row a,
-  #dataAnalystBody div.flex-row div, #dataAnalystChoresBody div.flex-row a, #dataAnalystChoresBody div.flex-row div, #jiraBlogBody div.flex-row a, #jiraBlogBody div.flex-row div,
+  #dataAnalystBody #officeBlogBody div.flex-row2 a,
+  #officeBlogBody #dataAnalystBody div.flex-row2 a,
+  #dataAnalystBody div.flex-row div,
+  #dataAnalystBody #officeBlogBody div.flex-row2 div,
+  #officeBlogBody #dataAnalystBody div.flex-row2 div, #dataAnalystChoresBody div.flex-row a, #dataAnalystChoresBody #officeBlogBody div.flex-row2 a, #officeBlogBody #dataAnalystChoresBody div.flex-row2 a, #dataAnalystChoresBody div.flex-row div, #dataAnalystChoresBody #officeBlogBody div.flex-row2 div, #officeBlogBody #dataAnalystChoresBody div.flex-row2 div, #jiraBlogBody div.flex-row a, #jiraBlogBody #officeBlogBody div.flex-row2 a, #officeBlogBody #jiraBlogBody div.flex-row2 a, #jiraBlogBody div.flex-row div, #jiraBlogBody #officeBlogBody div.flex-row2 div, #officeBlogBody #jiraBlogBody div.flex-row2 div,
   #salesForceBlogBody div.flex-row a,
-  #salesForceBlogBody div.flex-row div, #officeBlogBody div.flex-row a, #officeBlogBody div.flex-row div {
+  #salesForceBlogBody #officeBlogBody div.flex-row2 a,
+  #officeBlogBody #salesForceBlogBody div.flex-row2 a,
+  #salesForceBlogBody div.flex-row div,
+  #salesForceBlogBody #officeBlogBody div.flex-row2 div,
+  #officeBlogBody #salesForceBlogBody div.flex-row2 div, #officeBlogBody div.flex-row a, #officeBlogBody div.flex-row2 a, #officeBlogBody div.flex-row div, #officeBlogBody div.flex-row2 div {
     padding: 0 .5rem; }
   #blogBody1 a.blog-contact-us-link, #powerBIBlogBody a.blog-contact-us-link, #tableauBlogBody a.blog-contact-us-link,
   #dataAnalystBody a.blog-contact-us-link, #dataAnalystChoresBody a.blog-contact-us-link, #jiraBlogBody a.blog-contact-us-link,
@@ -20353,6 +20361,115 @@ div.tableau-download-links a img:hover {
 
 #salesForceBlogBody div.salesforce-download-links a img:hover {
   opacity: .8; }
+
+#officeBlogBody #carouselOffice .carousel-indicators li, #officeBlogBody #wordCarousel .carousel-indicators li, #officeBlogBody #powerPointCarousel .carousel-indicators li,
+#officeBlogBody #excelCarousel .carousel-indicators li, #officeBlogBody #visioCarousel .carousel-indicators li, #officeBlogBody #outlookCarousel .carousel-indicators li,
+#officeBlogBody #oneNoteCarousel .carousel-indicators li, #officeBlogBody #oneDriveCarousel .carousel-indicators li, #officeBlogBody #accessCarousel .carousel-indicators li {
+  background-color: orange; }
+
+#officeBlogBody #carouselOffice span.carousel-control-prev-icon, #officeBlogBody #carouselOffice span.carousel-control-next-icon, #officeBlogBody #wordCarousel span.carousel-control-prev-icon, #officeBlogBody #wordCarousel span.carousel-control-next-icon, #officeBlogBody #powerPointCarousel span.carousel-control-prev-icon, #officeBlogBody #powerPointCarousel span.carousel-control-next-icon,
+#officeBlogBody #excelCarousel span.carousel-control-prev-icon,
+#officeBlogBody #excelCarousel span.carousel-control-next-icon, #officeBlogBody #visioCarousel span.carousel-control-prev-icon, #officeBlogBody #visioCarousel span.carousel-control-next-icon, #officeBlogBody #outlookCarousel span.carousel-control-prev-icon, #officeBlogBody #outlookCarousel span.carousel-control-next-icon,
+#officeBlogBody #oneNoteCarousel span.carousel-control-prev-icon,
+#officeBlogBody #oneNoteCarousel span.carousel-control-next-icon, #officeBlogBody #oneDriveCarousel span.carousel-control-prev-icon, #officeBlogBody #oneDriveCarousel span.carousel-control-next-icon, #officeBlogBody #accessCarousel span.carousel-control-prev-icon, #officeBlogBody #accessCarousel span.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: orange; }
+
+#officeBlogBody #carouselOffice div.mask p.parah-mask-text, #officeBlogBody #wordCarousel div.mask p.parah-mask-text, #officeBlogBody #powerPointCarousel div.mask p.parah-mask-text,
+#officeBlogBody #excelCarousel div.mask p.parah-mask-text, #officeBlogBody #visioCarousel div.mask p.parah-mask-text, #officeBlogBody #outlookCarousel div.mask p.parah-mask-text,
+#officeBlogBody #oneNoteCarousel div.mask p.parah-mask-text, #officeBlogBody #oneDriveCarousel div.mask p.parah-mask-text, #officeBlogBody #accessCarousel div.mask p.parah-mask-text {
+  position: relative;
+  left: 50%;
+  padding-top: 2rem;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Arial Rounded MT Bold", serif; }
+
+#officeBlogBody .slate-blue-text {
+  color: #6A5ACD; }
+
+#officeBlogBody .dark-slate-blue-text {
+  color: #483D8B; }
+
+#officeBlogBody .medium-slate-blue-text {
+  color: #7B68EE; }
+
+#officeBlogBody .light-coral-text {
+  color: lightcoral; }
+
+#officeBlogBody .palevioletred-text {
+  color: palevioletred; }
+
+#officeBlogBody .blog-content-heading-2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #656565;
+  letter-spacing: 1px; }
+
+#officeBlogBody .office-target-links li a {
+  color: orange;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none; }
+  #officeBlogBody .office-target-links li a:hover {
+    color: orangered;
+    text-decoration: none !important; }
+
+#officeBlogBody li > ul {
+  border-left: 5px solid #750000;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: .25rem .5rem;
+  margin-top: .5rem; }
+
+#officeBlogBody table th {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center; }
+
+#officeBlogBody table tbody td {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: .5px;
+  vertical-align: middle; }
+
+#officeBlogBody table tbody tr > td:first-child, #officeBlogBody table tbody tr > td:nth-child(2) {
+  width: 20% !important;
+  text-align: center; }
+
+#officeBlogBody table tbody tr > td:last-child {
+  width: 60% !important; }
+
+#officeBlogBody div.office-download-links p a {
+  color: #28a745; }
+  #officeBlogBody div.office-download-links p a span {
+    color: #2196f3; }
+  #officeBlogBody div.office-download-links p a:hover {
+    color: grey !important; }
+    #officeBlogBody div.office-download-links p a:hover span {
+      color: gray; }
+
+#officeBlogBody div.office-download-links a img:hover {
+  opacity: .8; }
+
+#officeBlogBody .header-parah {
+  font-weight: bolder;
+  margin-bottom: 0; }
+
+#officeBlogBody div.flex-row2 a {
+  padding: .75rem;
+  font-weight: bolder;
+  text-shadow: none; }
+
+#officeBlogBody div.flex-row2 .btn-unique {
+  border: 2px solid transparent; }
+  #officeBlogBody div.flex-row2 .btn-unique:hover {
+    color: #880e4f !important;
+    background: white !important;
+    border-color: #880e4f !important; }
 
 #aboutUsMain p > strong {
   font-weight: bold !important; }
