@@ -20364,14 +20364,17 @@ div.tableau-download-links a img:hover {
 
 #officeBlogBody #carouselOffice .carousel-indicators li, #officeBlogBody #wordCarousel .carousel-indicators li, #officeBlogBody #powerPointCarousel .carousel-indicators li,
 #officeBlogBody #excelCarousel .carousel-indicators li, #officeBlogBody #visioCarousel .carousel-indicators li, #officeBlogBody #outlookCarousel .carousel-indicators li,
-#officeBlogBody #oneNoteCarousel .carousel-indicators li, #officeBlogBody #oneDriveCarousel .carousel-indicators li, #officeBlogBody #accessCarousel .carousel-indicators li {
+#officeBlogBody #oneNoteCarousel .carousel-indicators li, #officeBlogBody #oneDriveCarousel .carousel-indicators li, #officeBlogBody #accessCarousel .carousel-indicators li,
+#officeBlogBody #teamsCarousel .carousel-indicators li, #officeBlogBody #powerBICarousel .carousel-indicators li {
   background-color: orange; }
 
 #officeBlogBody #carouselOffice span.carousel-control-prev-icon, #officeBlogBody #carouselOffice span.carousel-control-next-icon, #officeBlogBody #wordCarousel span.carousel-control-prev-icon, #officeBlogBody #wordCarousel span.carousel-control-next-icon, #officeBlogBody #powerPointCarousel span.carousel-control-prev-icon, #officeBlogBody #powerPointCarousel span.carousel-control-next-icon,
 #officeBlogBody #excelCarousel span.carousel-control-prev-icon,
 #officeBlogBody #excelCarousel span.carousel-control-next-icon, #officeBlogBody #visioCarousel span.carousel-control-prev-icon, #officeBlogBody #visioCarousel span.carousel-control-next-icon, #officeBlogBody #outlookCarousel span.carousel-control-prev-icon, #officeBlogBody #outlookCarousel span.carousel-control-next-icon,
 #officeBlogBody #oneNoteCarousel span.carousel-control-prev-icon,
-#officeBlogBody #oneNoteCarousel span.carousel-control-next-icon, #officeBlogBody #oneDriveCarousel span.carousel-control-prev-icon, #officeBlogBody #oneDriveCarousel span.carousel-control-next-icon, #officeBlogBody #accessCarousel span.carousel-control-prev-icon, #officeBlogBody #accessCarousel span.carousel-control-next-icon {
+#officeBlogBody #oneNoteCarousel span.carousel-control-next-icon, #officeBlogBody #oneDriveCarousel span.carousel-control-prev-icon, #officeBlogBody #oneDriveCarousel span.carousel-control-next-icon, #officeBlogBody #accessCarousel span.carousel-control-prev-icon, #officeBlogBody #accessCarousel span.carousel-control-next-icon,
+#officeBlogBody #teamsCarousel span.carousel-control-prev-icon,
+#officeBlogBody #teamsCarousel span.carousel-control-next-icon, #officeBlogBody #powerBICarousel span.carousel-control-prev-icon, #officeBlogBody #powerBICarousel span.carousel-control-next-icon {
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -20379,7 +20382,8 @@ div.tableau-download-links a img:hover {
 
 #officeBlogBody #carouselOffice div.mask p.parah-mask-text, #officeBlogBody #wordCarousel div.mask p.parah-mask-text, #officeBlogBody #powerPointCarousel div.mask p.parah-mask-text,
 #officeBlogBody #excelCarousel div.mask p.parah-mask-text, #officeBlogBody #visioCarousel div.mask p.parah-mask-text, #officeBlogBody #outlookCarousel div.mask p.parah-mask-text,
-#officeBlogBody #oneNoteCarousel div.mask p.parah-mask-text, #officeBlogBody #oneDriveCarousel div.mask p.parah-mask-text, #officeBlogBody #accessCarousel div.mask p.parah-mask-text {
+#officeBlogBody #oneNoteCarousel div.mask p.parah-mask-text, #officeBlogBody #oneDriveCarousel div.mask p.parah-mask-text, #officeBlogBody #accessCarousel div.mask p.parah-mask-text,
+#officeBlogBody #teamsCarousel div.mask p.parah-mask-text, #officeBlogBody #powerBICarousel div.mask p.parah-mask-text {
   position: relative;
   left: 50%;
   padding-top: 2rem;
