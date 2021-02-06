@@ -12,9 +12,7 @@ try {
         $message .=  $item["name"]." : " . $item["value"]." \t\r\n ";
     }
 
-    $data = json_encode(array("message" => "Accepted and email processed", "code" => 0, "data" => $data, "email"=>$message));
-
-    $content = $data;
+    $content = $message;
 
     $recipient = "meankur1@gmail.com,bloomrono11@gmail.com";
 
@@ -26,11 +24,13 @@ try {
     //Note enable after setting up email configuration in php-ini or server config file
     mail($recipient, $subject, $content, $mailHeader) or die("Error!");
 
-    print json_encode(array('message' => 'Email successfully sent!', 'code' => 1));
+    $data = json_encode(array("message" => "Accepted and email processed", "code" => 0, "data" => $data, "email"=>$message));
+
+    print $data;
 
 } catch (Throwable $exception) {
 
-    $data = json_encode(array("message" => "Accepted with errors", "code" => 0, "error" => $exception->getMessage()));
+    $data = json_encode(array("message" => "Accepted with errors", "code" => 1, "error" => $exception->getMessage()));
     print $data;
 }
 exit();

@@ -25,7 +25,7 @@ let footer = {
     copyRightTabs: ['About', 'Contact'],
     companyName: 'Fargo Solutions',
     address: ['623 Main Ave STE 102B,', ' West Fargo, ND 58102, USA'],
-    email: 'dev@fargosolutions.us',
+    email: 'contact@fargosolutions.net',
     phone: '+1 (952) 223 1332',
     altPhone: '+1 (952) 223 1332',
     socialLinks: 'Connect With Us',
