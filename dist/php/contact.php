@@ -1,5 +1,6 @@
 <?php
 
+
 if (isset($_POST['name']))
     $name = $_POST['name'];
 if (isset($_POST['email']))
@@ -8,7 +9,9 @@ if (isset($_POST['message']))
     $message = $_POST['message'];
 if (isset($_POST['subject']))
     $subject = $_POST['subject'];
+
 header('Content-Type: application/json');
+
 if ($name === '') {
     print json_encode(array('message' => 'Name cannot be empty', 'code' => 0));
     exit();
@@ -48,13 +51,13 @@ if (strlen($message) < 4) {
     exit();
 }
 $content = "From: $name \nEmail: $email \nMessage: $message";
-//Todo change to company email
-$recipient = "dev@fargosolutions.us";
-$mailheader = "From: $email \r\n";
+
+$from = "contact@fargosolutions.net";
+$mailHeader = "From: $from \r\n";
+$recipient = "meankur1@gmail.com,bloomrono11@gmail.com";
 
 //Note enable after setting up email configuration in php-ini or server config file
-//mail($recipient, $subject, $content, $mailheader) or die("Error!");
+mail($recipient, $subject, $content, $mailHeader) or die("Error!");
 
 print json_encode(array('message' => 'Email successfully sent!', 'code' => 1));
 exit();
-?>

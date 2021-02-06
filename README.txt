@@ -24,3 +24,5 @@ https://mdbootstrap.com/forums/forum/support/
 Contact:
 office@mdbootstrap.com
 
+FSI contact
+contact@fargosolutions.net

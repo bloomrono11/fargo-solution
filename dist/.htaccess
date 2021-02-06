@@ -4,10 +4,10 @@ RewriteCond %{HTTP_HOST} ^(www\.)?fargosolutions\.net
 RewriteRule ^(.*)$ https://www.fargosolutions.net/$1 [R,L]
 DirectoryIndex index.html
 #Administrator Email for ErrorDocument
-SetEnv SERVER_ADMIN bloomrono11@gmail.com
+#SetEnv SERVER_ADMIN bloomrono11@gmail.com
 #Disallow Script Execution
 Options -ExecCGI
-AddHandler cgi-script .php .pl .py .jsp .asp .htm .shtml .sh .cgi
+AddHandler cgi-script .pl .py .jsp .asp .htm .shtml .sh .cgi
 #Blocking based on User-Agent Header
 SetEnvIfNoCase ^User-Agent$ .*(craftbot|download|extract|stripper|sucker|ninja|clshttp|webspider|leacher|collector|grabber|webpictures) HTTP_SAFE_BADBOT
 SetEnvIfNoCase ^User-Agent$ .*(libwww-perl|aesop_com_spiderman) HTTP_SAFE_BADBOT

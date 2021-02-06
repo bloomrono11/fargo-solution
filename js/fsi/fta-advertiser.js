@@ -262,8 +262,8 @@ let advertiser = {
      */
     performSubmission: function () {
 
-        // console.log(this.data);
-        // console.log(JSON.stringify(this.data));
+        console.log(this.data);
+        console.log(JSON.stringify(this.data));
         return;
         //todo complete this part later
         let me = this;

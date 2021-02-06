@@ -40,12 +40,12 @@
         <!--About Us Header container -->
         <div class="container">
             <!-- Heading -->
-            <h2 class="mb-3 home-content-heading">Publisher Sign Up</h2>
+            <h2 class="mb-3 home-content-heading">Advertiser Sign Up</h2>
         </div>
 
         <!-- Career container-->
         <div class="container p-5 border-rounded blue lighten-5" id="publisherFormContainer">
-            <form id="signUpForm" method="post" action="javascript:void(0)">
+            <form id="signUpForm" method="post" action="javascript:void(0)" name="advertiser">
                 <!--User part of form-->
                 <div>
                     <h2 class="text-center pb-3">Apply to our CPA network by submitting your information below.</h2>
@@ -55,14 +55,14 @@
                     <div class="col-md-6">
                         <div class="md-form">
                             <i class="far fa-user prefix"></i>
-                            <input type="text" id="firstName" name="firstName" class="form-control">
+                            <input type="text" id="firstName" name="firstName" class="form-control" validate-field="true">
                             <label for="firstName">First Name</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="md-form">
                             <i class="fas fa-user prefix"></i>
-                            <input type="text" id="lastName" name="lastName" class="form-control">
+                            <input type="text" id="lastName" name="lastName" class="form-control" validate-field="true">
                             <label for="lastName">Last Name</label>
                         </div>
                     </div>
@@ -73,14 +73,14 @@
                     <div class="col-md-6">
                         <div class="md-form">
                             <i class="fas fa-envelope prefix"></i>
-                            <input type="text" id="email" name="email" class="form-control">
+                            <input type="text" id="email" name="email" class="form-control" validate-field="true">
                             <label for="email">E-mail Address</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="md-form">
                             <i class="fas fa-phone fa-rotate-90 prefix"></i>
-                            <input type="text" id="phone" name="phone" class="form-control" data-type=number>
+                            <input type="text" id="phone" name="phone" class="form-control" data-type=number validate-field="true">
                             <label for="phone">Phone</label>
                         </div>
                     </div>
@@ -271,7 +271,7 @@
 
 <script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
 <script type="text/javascript" src="js/header.min.js"></script>
-<script type="text/javascript" src="js/advertiser.min.js"></script>
+<script type="text/javascript" src="js/publisher.min.js"></script>
 <script type="text/javascript" src="js/footer.min.js"></script>
 
 </body>

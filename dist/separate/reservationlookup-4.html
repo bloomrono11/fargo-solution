@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>Reservation Looks Up :Home</title><link rel="icon" href="img/ico/favicon-rl.ico"><link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/mdb.min.css" rel="stylesheet"><link href="css/style.min.css" rel="stylesheet"></head><body class="scrollbar scrollbar-deep-blue"><div class="container mt-5"><div class="row"><hr class="hr-light"><div class="col-md-12 d-flex flex-row justify-content-center"><div class="d-flex flex-column flex-center pr-2"><a style="font-size: 4.25rem; font-weight: bold; vertical-align: middle; text-align: center">Airline</a> <a style="font-size: 4.25rem; font-weight: bold; vertical-align: middle; text-align: center">Reservations</a></div><div><a><img src="img/logo/phone-call.png" class="img-fluid" alt="Call Us"></a></div></div><hr class="hr-light"><div class="col-md-12 text-center py-3"><a class="phone-number font-weight-bold"><span></span></a></div><hr class="hr-light"><div class="col-md-12 text-center justify-content-center"><a><img src="img/logo/call-center-1.png" class="img-fluid" alt="24x7 Support" style="max-height: 300px"></a></div><hr class="hr-light"><div class="col-md-12 text-center mt-3 pt-3"><a class="link"><span>24x7 Airlines Reservations Desk</span></a></div><hr class="hr-light"><div class="col-md-12 text-center"><a class="link"><span>Quick Booking</span></a></div><hr class="hr-light"><div class="col-md-12 text-center"><a class="link"><span>Easy Changes</span></a></div><hr class="hr-light"><div class="col-md-12 text-center"><a class="link"><span>Cancellation</span></a></div><hr class="hr-light"><div class="col-md-12 text-center mt-3 pt-3"><a class="large-phone-number"><span></span></a></div></div></div><script type="text/javascript" src="js/jquery-3.3.1.min.js"></script><script type="text/javascript" src="js/popper.min.js"></script><script type="text/javascript" src="js/bootstrap.min.js"></script><script type="text/javascript" src="js/mdb.min.js"></script><script>$(document).ready(function () {
+        let linkTags = $('div a');
+        const spanTag = $('div a.phone-number').find('span');
+        $(spanTag).text(formattedNumber);
+        const spanTag2 = $('div a.large-phone-number').find('span');
+        $(spanTag2).text(formattedNumber);
+        for (let i = 0; i < linkTags.length; i++) {
+            const target = 'tel:' + numberString;
+            $(linkTags[i]).attr('href', target);
+        }
+    });
+    const numberString = "18888576042";
+    const formattedNumber = "1(888)-857-6042";</script></body></html>

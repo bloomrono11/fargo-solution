@@ -97,10 +97,18 @@ let publisher = {
         if (inputs.length < 1) return;
         this.clearData();
         for (let i = 0; i < inputs.length; i++) {
-            if ($(inputs[i]).attr('data-type') === 'number') {
-                this.validateNumber($(inputs[i]));
+
+            //Note ignore fields that are not required for validation
+            let input = $(inputs[i]);
+            // console.log(input.attr('validate-field'));
+            if (input.attr('validate-field') === undefined || input.attr('validate-field') === false) {
+                continue;
+            }
+
+            if (input.attr('data-type') === 'number') {
+                this.validateNumber(input);
             } else {
-                this.validateValue($(inputs[i]));
+                this.validateValue(input);
             }
         }
         let errorMessage = this.errorMessage;
@@ -256,24 +264,23 @@ let publisher = {
      */
     performSubmission: function () {
 
+        this.data.push({name: "signUpForm", value: $('#' + this.formId).attr('name')});
         // console.log(this.data);
-        // console.log(JSON.stringify(this.data));
-        return;
+        console.log(JSON.stringify(this.data));
+        // return;
         //todo complete this part later
         let me = this;
         $.ajax({
             //Todo fix this later based on server setup
-            url: "../fsi/php/publisherSignUp.php",
+            url: "php/advertiseOrPublish.php",
             type: "POST",
-            data: JSON.stringify(me.data),
-            accept:'json',
+            data: me.data,
+            accept: 'json',
             success: function (data) {
-
-                // console.log(data);
-
+                console.log(data);
                 $('#status').text(data.message);
                 if (data.code) { //If mail was sent successfully, reset the form.
-                    let publisherForm =$('#signUpForm');
+                    let publisherForm = $('#signUpForm');
                     let inputs = publisherForm.find("input");
                     for (let i = 0; i < inputs.length; i++) {
                         $(inputs[i]).val("");
@@ -282,9 +289,9 @@ let publisher = {
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                // console.log(jqXHR, textStatus,errorThrown);
-                if(errorThrown ==='Method Not Allowed') {
-                    textStatus='server not reachable';
+                console.log(jqXHR, textStatus, errorThrown);
+                if (errorThrown === 'Method Not Allowed') {
+                    textStatus = 'server not reachable';
                 }
                 // me.status.text(textStatus);
                 // me.status.addClass('red-text');

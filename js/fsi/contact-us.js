@@ -137,9 +137,10 @@ let contact = {
 
     ajaxContactForm: function (formData) {
         let me = this;
+        console.log(formData);
         $.ajax({
             //Todo fix this later based on server setup
-            url: "../fsi/php/contact.php",
+            url: "php/contact.php",
             type: "POST",
             data: formData,
             accept:'json',
