@@ -260,16 +260,15 @@ let publisher = {
     },
     /**
      * This method is to submit form data
-     * todo complete ajax
      */
     performSubmission: function () {
 
         this.data.push({name: "signUpForm", value: $('#' + this.formId).attr('name')});
-        // console.log(this.data);
-        console.log(JSON.stringify(this.data));
+        // console.log(JSON.stringify(this.data));
         // return;
         //todo complete this part later
         let me = this;
+        let status = $('#status');
         $.ajax({
             //Todo fix this later based on server setup
             url: "php/advertiseOrPublish.php",
@@ -277,8 +276,12 @@ let publisher = {
             data: me.data,
             accept: 'json',
             success: function (data) {
-                console.log(data);
-                $('#status').text(data.message);
+                // console.log(data);
+                status.text("Status: " + data.message);
+
+                status.addClass('green-text');
+                status.removeClass('text-hide red-text');
+
                 if (data.code) { //If mail was sent successfully, reset the form.
                     let publisherForm = $('#signUpForm');
                     let inputs = publisherForm.find("input");
@@ -289,12 +292,13 @@ let publisher = {
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                console.log(jqXHR, textStatus, errorThrown);
+                // console.log(jqXHR, textStatus, errorThrown);
                 if (errorThrown === 'Method Not Allowed') {
                     textStatus = 'server not reachable';
                 }
-                // me.status.text(textStatus);
-                // me.status.addClass('red-text');
+                status.text("Status: " + textStatus);
+                status.addClass('red-text');
+                status.removeClass('text-hide green-text');
             }
         });
     }
