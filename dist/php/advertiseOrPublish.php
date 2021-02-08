@@ -14,7 +14,7 @@ try {
 
     $content = $message;
 
-    $recipient = "meankur1@gmail.com,bloomrono11@gmail.com";
+    $recipient = "contact@fargosolutions.net";
 
     $email ="contact@fargosolutions.net";
     $mailHeader = "From: $email \r\n";

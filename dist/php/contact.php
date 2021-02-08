@@ -54,7 +54,7 @@ $content = "From: $name \nEmail: $email \nMessage: $message";
 
 $from = "contact@fargosolutions.net";
 $mailHeader = "From: $from \r\n";
-$recipient = "meankur1@gmail.com,bloomrono11@gmail.com";
+$recipient = "contact@fargosolutions.net";
 
 //Note enable after setting up email configuration in php-ini or server config file
 mail($recipient, $subject, $content, $mailHeader) or die("Error!");

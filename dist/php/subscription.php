@@ -35,7 +35,7 @@ if ($email === '') {
 
 $content = "From: $name \nEmail: $email \nMessage: User wants to subscribe";
 
-$recipient = "meankur1@gmail.com,bloomrono11@gmail.com,dev@fargosolutions.us";
+$recipient = "contact@fargosolutions.net";
 $from = "contact@fargosolutions.net";
 $mail_header = "From: $from \r\n";
 $subject ="Subscription";

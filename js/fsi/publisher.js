@@ -273,7 +273,7 @@ let publisher = {
             //Todo fix this later based on server setup
             url: "php/advertiseOrPublish.php",
             type: "POST",
-            data: me.data,
+            data: JSON.stringify(me.data),
             accept: 'json',
             success: function (data) {
                 // console.log(data);
@@ -292,7 +292,7 @@ let publisher = {
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                // console.log(jqXHR, textStatus, errorThrown);
+                console.log(jqXHR, textStatus, errorThrown);
                 if (errorThrown === 'Method Not Allowed') {
                     textStatus = 'server not reachable';
                 }

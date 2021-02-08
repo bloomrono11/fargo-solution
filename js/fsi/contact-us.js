@@ -137,9 +137,9 @@ let contact = {
 
     ajaxContactForm: function (formData) {
         let me = this;
-        console.log(formData);
+        // console.log(formData);
         $.ajax({
-            //Todo fix this later based on server setup
+
             url: "php/contact.php",
             type: "POST",
             data: formData,
