@@ -19,6 +19,7 @@ let publisher = {
         }
         this.initializeAutoCompleteCountry();
 
+        $('#intlPhoneCode').materialSelect();
         form.submit(function () {
             return false;
         });
@@ -133,14 +134,23 @@ let publisher = {
         // console.log(value);
         let phoneRegex = /[0-9][-]/g, zipCodeRegex = /[0-9]/g;
 
+        let intlCode = "";
+
+        let select = $('#intlPhoneCode');
+        if (select !== undefined && select.length > 0) {
+
+            intlCode = select.val();
+            //format the intl code in a proper format
+            intlCode = "+" + intlCode + "-";
+        }
         if (value !== undefined && value.length > 1 && phoneRegex.test(value)) {
-            me.addToData(name, value);
+            me.addToData(name, intlCode + value);
             return;
         }
         if (input.attr('name') === 'zipcode') {
             if (value !== undefined && value.length > 1 && zipCodeRegex.test(value)) {
 
-                me.addToData(name, value);
+                me.addToData(name, (value));
                 return;
             }
         }
@@ -264,8 +274,8 @@ let publisher = {
     performSubmission: function () {
 
         this.data.push({name: "signUpForm", value: $('#' + this.formId).attr('name')});
-        // console.log(JSON.stringify(this.data));
-        // return;
+        console.log(JSON.stringify(this.data));
+        return;
         //todo complete this part later
         let me = this;
         let status = $('#status');

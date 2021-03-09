@@ -1,9 +1,10 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="fsi-xampp" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="xampp" start_url="/xampp/fsi">
-    <method>
+  <configuration default="false" name="fsi-xampp" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="xampp" start_url="http://localhost/xampp/fsi">
+    <method v="2">
       <option name="FtpUpload" enabled="true">
-        <server_id>0fe73b54-ea48-4637-8ed1-e133158beba7</server_id>
+        <server_id>8a49f670-03db-4cf7-b17d-807fd1142fe1</server_id>
         <server_name>xampp</server_name>
+        <group_name />
         <path>D:\Coding\fargo-solution\dist</path>
       </option>
     </method>

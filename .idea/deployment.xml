@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="xampp">
+  <component name="PublishConfigData">
     <serverData>
+      <paths name="fsi">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/dist" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/dist/reservation" />
+            <excludedPath local="true" path="$PROJECT_DIR$/dist/separate" />
+            <excludedPath local="true" path="$PROJECT_DIR$/dist/test" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
       <paths name="xampp">
         <serverdata>
           <mappings>
-            <mapping deploy="fsi" local="$PROJECT_DIR$/dist" web="xampp/fsi" />
+            <mapping deploy="\" local="$PROJECT_DIR$/dist" web="/xampp/fsi" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/dist/.htaccess" />
+            <excludedPath local="true" path="$PROJECT_DIR$/dist/reservation" />
+            <excludedPath local="true" path="$PROJECT_DIR$/dist/separate" />
+            <excludedPath local="true" path="$PROJECT_DIR$/dist/test" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
