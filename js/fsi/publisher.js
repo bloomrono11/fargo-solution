@@ -274,8 +274,8 @@ let publisher = {
     performSubmission: function () {
 
         this.data.push({name: "signUpForm", value: $('#' + this.formId).attr('name')});
-        console.log(JSON.stringify(this.data));
-        return;
+        // console.log(JSON.stringify(this.data));
+        // return;
         //todo complete this part later
         let me = this;
         let status = $('#status');
