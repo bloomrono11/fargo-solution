@@ -1,8 +1,8 @@
-$career-list-color:#fff;
-$career-list-active-color:orange;
-$career-list-active-bg-color:rgba(117, 245, 255, 0.5);
-$career-list-hover-color:#171616;
-$career-list-hover-bg-color:#342e2e;
+$career-list-color: #fff;
+$career-list-active-color: orange;
+$career-list-active-bg-color: rgba(117, 245, 255, 0.5);
+$career-list-hover-color: #171616;
+$career-list-hover-bg-color: #342e2e;
 //red #c82119
 
 ul.career-ul {
@@ -14,41 +14,48 @@ ul.career-ul {
   font-size: 14px;
   font-weight: 500;
   text-align: left;
+
   li {
     padding: 1rem 0 1rem 1.75rem;
     list-style: none;
     border-bottom: 1px solid #443f3f;
     background-color: #342e2e;
+
     &:hover {
       background-color: #171616;
     }
+
     a {
       color: $career-list-color;
     }
+
     a.active {
       color: $career-list-active-color;
       font-weight: 600;
-      &:after{
+
+      &:after {
         position: absolute;
-        width:0;
-        height:0;
+        width: 0;
+        height: 0;
         content: "";
-        margin-top:-1%;
-        right:0;
+        margin-top: -1%;
+        right: 0;
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
         border-left: 15px solid $career-list-active-bg-color !important;
         z-index: 10;
       }
     }
-    &.active{
+
+    &.active {
       background-color: $career-list-active-bg-color !important;
-      z-index:2;
+      z-index: 2;
     }
 
     a, a.active {
       padding-left: 10% !important;
       letter-spacing: .5px;
+
       &:before {
         position: absolute;
         left: 5%;
@@ -79,4 +86,19 @@ ul.career-ul {
     }
   }
 
+}
+
+.job-position {
+  div{
+    font-size: 15px;
+  }
+  div.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline wavy #bc3838;
+  }
+
+  b {
+    font-weight: bold;
+  }
 }
