@@ -20562,6 +20562,18 @@ ul.career-ul {
     padding-top: 1rem;
     font-weight: bold; }
 
+.job-position div {
+  font-size: 15px; }
+
+.job-position div.title {
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-text-decoration: underline wavy #bc3838;
+          text-decoration: underline wavy #bc3838; }
+
+.job-position b {
+  font-weight: bold; }
+
 #healthContainer .health-header {
   font-size: 24px;
   font-weight: 600; }
