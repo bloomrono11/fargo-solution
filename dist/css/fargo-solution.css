@@ -20567,9 +20567,7 @@ ul.career-ul {
 
 .job-position div.title {
   font-size: 20px;
-  font-weight: bold;
-  -webkit-text-decoration: underline wavy #bc3838;
-          text-decoration: underline wavy #bc3838; }
+  font-weight: bold; }
 
 .job-position b {
   font-weight: bold; }
