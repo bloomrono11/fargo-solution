@@ -18,6 +18,12 @@ body {
       font-weight: bold;
     }
 
+    @media screen and (max-width: 992px) {
+      .header {
+        font-size: 50px;
+      }
+    }
+
     .body {
       font-size: 24px;
       font-weight: 400;
