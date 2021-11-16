@@ -95,6 +95,9 @@ $navbar-notch-color:$orange;
   &.navbar-orange {
     @include make-navbar($navbar-light-disabled-color, $navbar-light-toggler-icon, $black, $navbar-orange-hover-color, $navbar-light-bg-active-color,$navbar-notch-color);
   }
+  &.navbar-orange-secondary {
+    @include make-navbar($navbar-light-disabled-color, $navbar-light-toggler-icon, $black, $navbar-orange-hover-color, rgba(199, 101, 41, 0.71),$navbar-notch-color);
+  }
   &.scrolling-navbar {
     @media (min-width: $small-screen) {
       transition: $navbar-scrolling-transition;

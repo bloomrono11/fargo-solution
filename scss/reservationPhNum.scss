@@ -16,6 +16,7 @@ $about-us-link-hover-color: #9c9999;
 $call-btn-background-color: #181818;
 
 @import "basic-web-page";
+@import "scrollbar";
 
 div#end {
   .custom-container {
@@ -28,5 +29,11 @@ div#end {
       -moz-background-clip: text;
       -moz-text-fill-color: transparent;
     }
+  }
+}
+
+header {
+  a.nav-link {
+    font-weight: bold;
   }
 }
