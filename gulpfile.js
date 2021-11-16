@@ -87,6 +87,21 @@ gulp.task('js-minify-fsi', () => {
         .pipe(gulp.dest('./dist/js'))
 });
 
+// Gulp task to minify P4C JavaScript files
+gulp.task('js-minify-p4c', () => {
+    return gulp.src(['./js/p4c/*.js'])
+        // Minify the file
+        .pipe(minify({
+            ext: {
+                // src:'.js',
+                min: '.min.js'
+            },
+            noSource: true,
+        }))
+        // Output
+        .pipe(gulp.dest('./dist/js'))
+});
+
 // Gulp task to minify HTML files
 gulp.task('html-minify', function() {
     return gulp.src(['./html/**/*.html'])
@@ -171,6 +186,10 @@ gulp.task('fsi', function () {
     }));
 
     gulp.watch("js/**/*.js", gulp.series('js-minify-fsi', (done)=>{
+        browserSync.reload();
+        done();
+    }));
+    gulp.watch("js/**/*.js", gulp.series('js-minify-p4c', (done)=>{
         browserSync.reload();
         done();
     }));

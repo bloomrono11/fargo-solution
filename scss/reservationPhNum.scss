@@ -1,0 +1,32 @@
+body {
+  font-family: Calibri, sans-serif;
+}
+
+@import "mdb";
+@import "custom-variables";
+$url-intro: "../img/reservation/airline-wings-1920.jpg";
+$url-end: "../img/reservation/airline-inside-1920.jpg";
+
+$custom-container-bg-color: #181818;
+$custom-container-span-color: #6f6f6f;
+$about-us-card-border-color: #6d6d6d;
+$about-us-link-color: #181818;
+$about-us-link-hover-color: #9c9999;
+
+$call-btn-background-color: #181818;
+
+@import "basic-web-page";
+
+div#end {
+  .custom-container {
+    h1, p {
+      background-color: $black;
+      background-image: linear-gradient(90deg, $black, $orange-darken-1);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+  }
+}

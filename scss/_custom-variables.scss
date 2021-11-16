@@ -1,4 +1,6 @@
 // Your custom
+@import "core/colors";
+@import "core/variables";
 $custom-border-bottom: 1px solid orange;
 
 .navbar-dropdown-active {
@@ -10,3 +12,14 @@ $custom-border-bottom: 1px solid orange;
     border-color: transparent !important;
   }
 }
+//My custom variables that will be used for airline call and reservation phone number pages
+$url-intro:"";
+$url-end:"";
+
+$custom-container-bg-color:#181818;
+$custom-container-span-color:#6f6f6f;
+$about-us-card-border-color:cornflowerblue;
+$about-us-link-color:#100595;
+$about-us-link-hover-color:#2fa3ff;
+
+$call-btn-background-color:#e51937;

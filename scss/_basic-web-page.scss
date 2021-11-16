@@ -1,0 +1,148 @@
+#intro {
+  background: url($url-intro) center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+
+  .custom-container {
+    padding-top: 4rem !important;
+    color: white !important;
+
+    .header {
+      font-size: 70px;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 992px) {
+      .header {
+        font-size: 50px;
+      }
+    }
+
+    .body {
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .call-btn {
+      background-color: $call-btn-background-color;
+      font-weight: bold;
+      font-size: 32px;
+
+      &:hover {
+        background-color: $white;
+        color: $black !important;
+      }
+    }
+  }
+}
+
+.call-btn {
+  font-size: 26px;
+  @media screen and (min-width: 992px) {
+    font-size: 32px;
+  }
+}
+
+#end {
+  @extend #intro;
+  background: url($url-end) center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+
+#aboutUsContainer {
+  text-align: center;
+
+  .header {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .body {
+    font-size: 16px;
+  }
+
+  .card-image-custom {
+    width: 100%;
+    background-color: inherit;
+
+    img {
+      width: 25% !important;
+      padding-top: 2rem;
+    }
+  }
+
+  .card {
+    border: 1px solid $about-us-card-border-color;
+    margin-top: 1rem;
+  }
+
+  .card-title {
+    a {
+      color: $about-us-link-color;
+
+      &:hover {
+        color: $about-us-link-hover-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  a.parah-link {
+    color: black;
+
+    &:hover {
+      color: #575757 !important;
+    }
+  }
+}
+
+#privacyContainer, #termsContainer {
+  color: $custom-container-bg-color;
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  span {
+    color: #6f6f6f;
+  }
+}
+
+
+@media screen and (min-width: 993px) {
+  .margin-minus-10p {
+    margin-top: -15% !important;
+  }
+  #travelIFrame {
+    min-height: 400px;
+    z-index: 5 !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #travelIFrame {
+    min-height: 400px;
+    z-index: 5 !important;
+  }
+  .call-btn {
+    font-size: 26px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #travelIFrame {
+    min-height: 350px;
+    z-index: 5 !important;
+  }
+  .call-btn {
+    font-size: 26px !important;
+  }
+}
