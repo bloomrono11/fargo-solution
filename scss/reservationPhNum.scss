@@ -37,3 +37,13 @@ header {
     font-weight: bold;
   }
 }
+
+.footer-links {
+
+  font-weight: bolder!important;
+  &:hover{
+    color: #fd9544 !important;
+    text-decoration: underline #db5d1b;
+  }
+
+}
