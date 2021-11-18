@@ -15,7 +15,7 @@ $(document).ready(function () {
         const target = 'tel:' + numberString;
         let linkTag = $(linkTags[i]);
         linkTag.attr('href', target);
-        linkTag.text(formattedNumber);
+        linkTag.html('<i class="fa fa-phone fa-rotate-90 mr-2"></i>'+formattedNumber);
     }
     //link tag href replace
     linkTags = $('a.link-replace');
