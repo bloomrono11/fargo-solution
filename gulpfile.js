@@ -8,7 +8,7 @@ const htmlmin = require('gulp-htmlmin');
 const minify = require('gulp-minify');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
-const fs = require('fs');
+//const fs = require('fs');
 
 const cssAddonsPath = './css/modules/';
 
@@ -42,7 +42,7 @@ gulp.task('css-compile-modules', function () {
 
 // CSS minify
 gulp.task('css-minify', function () {
-   return  gulp.src(['./dist/css/*.css', '!./dist/css/*.min.css', '!./dist/css/bootstrap.css'])
+    return gulp.src(['./dist/css/*.css', '!./dist/css/*.min.css', '!./dist/css/bootstrap.css'])
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/css'));
@@ -50,7 +50,7 @@ gulp.task('css-minify', function () {
 });
 
 gulp.task('css-minify-modules', function () {
-   return gulp.src(['./dist/css/modules/*.css', '!./dist/css/modules/*.min.css'])
+    return gulp.src(['./dist/css/modules/*.css', '!./dist/css/modules/*.min.css'])
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/css/modules'));
@@ -75,7 +75,7 @@ gulp.task('js-build', () => {
 // Gulp task to minify FSI JavaScript files
 gulp.task('js-minify-fsi', () => {
     return gulp.src(['./js/fsi/*.js'])
-    // Minify the file
+        // Minify the file
         .pipe(minify({
             ext: {
                 // src:'.js',
@@ -102,8 +102,23 @@ gulp.task('js-minify-p4c', () => {
         .pipe(gulp.dest('./dist/js'))
 });
 
+// Gulp task to minify Basic ad related web JavaScript files
+gulp.task('js-minify-basic-web', () => {
+    return gulp.src(['./js/basic-web/*.js'])
+        // Minify the file
+        .pipe(minify({
+            ext: {
+                // src:'.js',
+                min: '.min.js'
+            },
+            noSource: true,
+        }))
+        // Output
+        .pipe(gulp.dest('./dist/js'))
+});
+
 // Gulp task to minify HTML files
-gulp.task('html-minify', function() {
+gulp.task('html-minify', function () {
     return gulp.src(['./html/**/*.html'])
         .pipe(htmlmin({
             collapseWhitespace: true,
@@ -113,7 +128,7 @@ gulp.task('html-minify', function() {
 });
 
 gulp.task('js-minify', () => {
-    return gulp.src(['./js/lib/mdb.js','node_modules/smooth-scroll/dist/smooth-scroll.polyfills.js'])
+    return gulp.src(['./js/lib/mdb.js', 'node_modules/smooth-scroll/dist/smooth-scroll.polyfills.js'])
         .pipe(minify({
             ext: {
                 // src:'.js',
@@ -128,7 +143,7 @@ gulp.task('js-minify', () => {
 gulp.task('img-compression', function () {
     return gulp.src(['./img/**'])
         .pipe(imagemin([
-            imagemin.gifsicle ({interlaced: true}),
+            imagemin.gifsicle({interlaced: true}),
             imagemin.jpegtran({progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({
@@ -149,7 +164,7 @@ gulp.task('live-server', function () {
             directory: true
         },
         notify: false,
-        https:true
+        https: true
     });
 
     gulp.watch("**/*", {cwd: './dist/'}, browserSync.reload);
@@ -167,35 +182,42 @@ gulp.task('fsi', function () {
     });
 
     // gulp.watch("node_modules/@fortawesome/fontawesome-free/scss/*.scss", ['sass']);
-    gulp.watch("scss/**/*.scss", gulp.series('css-compile', (done)=>{
+    gulp.watch("scss/**/*.scss", gulp.series('css-compile', (done) => {
         browserSync.reload();
         done();
     }));
 
-    gulp.watch(["dist/css/*.css", "!dist/css/*.min.css"], gulp.series('css-minify', (done)=>{
+    gulp.watch(["dist/css/*.css", "!dist/css/*.min.css"], gulp.series('css-minify', (done) => {
         browserSync.reload();
         done();
     }));
-    gulp.watch(["html/*.html","html/blog/*.html"], gulp.series('html-minify', (done)=>{
+    gulp.watch(["html/*.html", "html/blog/*.html"], gulp.series('html-minify', (done) => {
         browserSync.reload();
         done();
     }));
-    gulp.watch("js/**/*.js", gulp.series('js-minify', (done)=>{
+    gulp.watch("js/**/*.js", gulp.series('js-minify', (done) => {
         browserSync.reload();
         done();
     }));
 
-    gulp.watch("js/**/*.js", gulp.series('js-minify-fsi', (done)=>{
+    gulp.watch("js/**/*.js", gulp.series('js-minify-fsi', (done) => {
         browserSync.reload();
         done();
     }));
-    gulp.watch("js/**/*.js", gulp.series('js-minify-p4c', (done)=>{
+
+    gulp.watch("js/**/*.js", gulp.series('js-minify-p4c', (done) => {
         browserSync.reload();
         done();
     }));
+
+    gulp.watch("js/**/*.js", gulp.series('js-minify-basic-web', (done) => {
+        browserSync.reload();
+        done();
+    }));
+
 
     // gulp.watch(["dist/js/*.js", "!dist/js/*.min.js"], ['js-minify']);
-    gulp.watch("**/*", {cwd: './img/'}, gulp.series('img-compression', (done)=>{
+    gulp.watch("**/*", {cwd: './img/'}, gulp.series('img-compression', (done) => {
         browserSync.reload();
         done();
     }));

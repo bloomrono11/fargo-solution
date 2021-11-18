@@ -176,7 +176,7 @@
 </main>
 <footer id="footer" class="page-footer unique-color pt-2">
     <div class="container">
-        <p class="text-left"> © 2020 Reservation Air Ticket - 66 W. Flagler St, Miami FL 33130</p>
+        <p class="text-left"> © 2020 Reservation Air Ticket - <span class="address-fill"></span></p>
         <p class="text-left">
             TicketAirlineBooking.com does not guarantee the accuracy of any content, information, product, or service that has
             been published on its website. Note that any such description or information, which includes but is not
@@ -203,23 +203,9 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <script>
-    $(document).ready(function () {
-        let linkTags = $('a.number-replace');
-        for (let i = 0; i < linkTags.length; i++) {
-            const target = 'tel:' + numberString;
-            let linkTag = $(linkTags[i]);
-            linkTag.attr('href', target);
-            linkTag.text(formattedNumber);
-        }
-        linkTags = $('a.link-replace');
-        for (let i = 0; i < linkTags.length; i++) {
-            const target = 'tel:' + numberString;
-            let linkTag = $(linkTags[i]);
-            linkTag.attr('href', target);
-        }
-    });
     const numberString = "18883034272";
     const formattedNumber = "1(888)-303-4272";
 </script>
+<script type="text/javascript" src="js/basic.min.js"></script>
 </body>
 </html>
