@@ -1,3 +1,4 @@
+
 #intro {
   background: url($url-intro) center no-repeat;
   background-size: cover;
@@ -5,16 +6,16 @@
 
   .custom-container {
     padding-top: 4rem !important;
-    color: white !important;
+    color: $header-color !important;
 
     .header {
-      font-size: 70px;
+      font-size: 60px;
       font-weight: bold;
     }
 
     @media screen and (max-width: 992px) {
       .header {
-        font-size: 50px;
+        font-size: 45px;
       }
     }
 
@@ -125,9 +126,30 @@
     min-height: 400px;
     z-index: 5 !important;
   }
+  #navContainer {
+    a.navbar-brand {
+      width: 35%;
+
+      img {
+        max-width: 25%;
+        border-radius: .25rem;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 992px) {
+  #navContainer {
+    a.navbar-brand {
+      width: 25%;
+
+      img {
+        max-width: 100%;
+        border-radius: .25rem;
+      }
+    }
+  }
   #travelIFrame {
     min-height: 400px;
     z-index: 5 !important;
@@ -135,9 +157,22 @@
   .call-btn {
     font-size: 26px !important;
   }
+
+
 }
 
 @media screen and (max-width: 600px) {
+  #navContainer {
+    a.navbar-brand {
+
+      width: 25%;
+
+      img {
+        max-width: 100%;
+        border-radius: .25rem;
+      }
+    }
+  }
   #travelIFrame {
     min-height: 350px;
     z-index: 5 !important;
