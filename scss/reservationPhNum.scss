@@ -1,7 +1,3 @@
-body {
-  font-family: Calibri, sans-serif;
-}
-
 @import "mdb";
 @import "custom-variables";
 $url-intro: "../img/reservation/airline-wings-1920.jpg";
@@ -18,6 +14,11 @@ $header-color: $orange-darken-2;
 
 @import "basic-web-page";
 @import "scrollbar";
+
+body {
+  font-family: Calibri, sans-serif !important;
+  font-weight: 400;
+}
 
 div#end {
   .custom-container {
