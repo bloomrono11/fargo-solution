@@ -1,0 +1,358 @@
+@import "mdb";
+@import "custom-variables";
+
+$url-intro: "../img/airticket/airticket-intro.jpg";
+$url-end: "../img/airticket/airticket-end.jpg";
+
+
+@import "scrollbar";
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.border-rounded {
+  border-radius: 1rem;
+}
+
+.call-btn {
+  background: rgba(226, 172, 3, 1);
+  box-shadow: inset 0 2px 4px #624a01;
+  color: #1569A4;
+  font-weight: bold;
+  border-radius: .5rem;
+
+  &:hover {
+    background: #1569A4;
+    color: rgba(226, 172, 3, 1);
+    box-shadow: inset 0 1 0 #1569A4, inset 0 -1px 2px #0b55a4;
+  }
+}
+
+header {
+  #headerContainer {
+
+    height: 10vh;
+    background: linear-gradient(45deg, #E2AC03 50%, #6a6a6a 50%);
+
+    p {
+      text-align: right;
+      font-size: 20px;
+    }
+
+    .call-btn {
+      font-size: 25px;
+    }
+
+    .display-mobile {
+      position: fixed;
+      z-index: 17 !important;
+      display: block;
+      top: 0;
+      height: 25vh;
+      margin: 0 6.5%;
+      padding: 1rem 2rem;
+      width: 80% !important;
+      background: #E2AC03;
+      border-radius: 0 0 1rem 1rem;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      height: 30vh;
+      background: #535353 !important;
+      .container {
+        background: #c89803 !important;
+        border-radius: 0 0 1rem 1rem;
+      }
+      text-align: center;
+
+      .display-mobile {
+        height: 30vh;
+      }
+      .display-desktop {
+        display: none;
+        visibility: hidden;
+      }
+      .call-btn, p {
+        font-size: 18px;
+      }
+      .call-btn {
+        padding: 1rem 0;
+
+        background: #1569A4;
+        color: rgba(226, 172, 3, 1);
+        box-shadow: inset 0 1 0 #1569A4, inset 0 -1px 2px #0b55a4;
+
+        &:hover {
+          background: white;
+          color: #1569A4;
+        }
+
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+
+      height: 30vh;
+      background: #535353 !important;
+      .container {
+        background: #c89803 !important;
+        border-radius: 0 0 1rem 1rem;
+      }
+      text-align: center;
+
+      .display-desktop {
+        display: none;
+        visibility: hidden;
+      }
+      .call-btn, p {
+        font-size: 18px;
+      }
+      .call-btn {
+        padding: 1rem 0;
+
+        background: #1569A4;
+        color: rgba(226, 172, 3, 1);
+        box-shadow: inset 0 1 0 #1569A4, inset 0 -1px 2px #0b55a4;
+
+        &:hover {
+          background: white;
+          color: #1569A4;
+        }
+
+      }
+    }
+
+    @media screen and (min-width: 993px) {
+      .display-mobile {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+#introContainer {
+  background: rgba(7, 24, 64, 0.86) url($url-intro) no-repeat center center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  display: block;
+  position: relative;
+
+  .bg-overlay {
+    position: absolute;
+    background: rgba(7, 24, 64, 0.86);
+    height: 500px;
+    width: 100%;
+    margin-left: -1.05rem;
+  }
+
+  .container {
+    padding-top: 2.5rem;
+  }
+
+  .header h1 {
+    z-index: 5 !important;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(61, 175, 255);
+
+    span {
+      color: rgb(122, 200, 255);
+    }
+  }
+
+  .call-btn {
+    font-size: 50px;
+
+    &:hover {
+      background: white;
+      box-shadow: inset 0 1 0 white, inset 0 -1px 2px #cccccc;
+      color: black;
+    }
+  }
+
+
+  p {
+    font-size: 26px;
+    color: white;
+
+    span {
+      color: rgb(251, 203, 4);
+    }
+  }
+
+  .intro-bottom {
+    background-color: #1569a4;
+    color: #fff;
+    font-size: 26px;
+    margin-left: -1.5rem;
+    margin-top: 0;
+    padding-top: 1rem;
+    width: 102%;
+    text-align: center;
+    overflow: hidden;
+
+    p span {
+      color: rgb(251, 203, 4);
+      background-color: #0b51c5;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .call-btn {
+      font-size: 20px;
+    }
+    &, .bg-overlay {
+      height: 570px !important;
+    }
+    p, .intro-bottom {
+      font-size: 16px;
+      margin-left: -1rem;
+      width: 108%;
+    }
+    img.img-fluid {
+      max-width: 40% !important;
+    }
+  }
+
+}
+
+#paymentDetailsContainer {
+  margin-top: 3rem;
+
+  .header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 3.5rem;
+    margin-bottom: 1.25rem;
+    .innerRow {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      text-align: center;
+
+      > div {
+        padding-top: .5rem !important;
+        padding-bottom: .5rem !important;
+      }
+    }
+    .mobile-margin {
+      margin: 0 1rem;
+    }
+  }
+}
+
+#airlineContainer, #customerSuppContainer, #flightCostContainer {
+
+  font-size: 22px;
+
+  .header {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(21, 105, 164);
+  }
+
+  div.row > div {
+    padding-top: .25rem;
+  }
+}
+
+#endContainer {
+
+  display: block;
+  background: rgba(12, 31, 76, 0.87) url($url-end) no-repeat fixed center center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 400px;
+  position: relative;
+
+  .bg-overlay {
+    position: absolute;
+    background: rgba(12, 31, 76, 0.87);
+    height: 400px;
+    width: 100%;
+    margin-left: -1.05rem;
+  }
+
+  .container {
+    line-height: 2rem;
+
+    .flex-column {
+      div, p {
+        z-index: 5 !important;
+      }
+
+      p {
+        color: white;
+
+        span {
+          color: rgb(251, 203, 4);
+        }
+      }
+    }
+  }
+
+  .header {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(251, 203, 4);
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  .call-btn {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .call-btn {
+      font-size: 20px;
+    }
+    p, .header {
+      font-size: 16px;
+    }
+  }
+}
+
+footer {
+  div a {
+    padding: .5rem 1rem;
+    font-size: 16px;
+
+    &:hover {
+      text-decoration: underline grey !important;
+    }
+  }
+
+  span {
+    font-size: 16px;
+  }
+}
+
+.modal-dark {
+  .modal-content > .modal-header {
+    background-color: black !important;
+    color: white;
+  }
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.privacy-parah {
+  font-size: 16px;
+  font-weight: bold;
+}
