@@ -15,7 +15,7 @@ $(document).ready(function () {
         const target = 'tel:' + numberString;
         let linkTag = $(linkTags[i]);
         linkTag.attr('href', target);
-        linkTag.html('<i class="fa fa-phone fa-rotate-90 mr-2"></i>'+formattedNumber);
+        linkTag.html('<i class="fa fa-phone fa-rotate-90 mr-2"></i>' + formattedNumber);
     }
     //link tag href replace
     linkTags = $('a.link-replace');
@@ -24,5 +24,11 @@ $(document).ready(function () {
         let linkTag = $(linkTags[i]);
         linkTag.attr('href', target);
     }
+
+    //add travel script late
+    let travelFrameContainer = $('#travelIFrameContainer');
+    travelFrameContainer.html('<iframe class="w-100 border-0 position-relative" id="travelIFrame" loading="lazy"' +
+        ' src="https://www.travelpayouts.com/widgets/444787d409cef89cd87f886bad23ab52.html?v=2178">\n' +
+        '        </iframe>');
 
 });
