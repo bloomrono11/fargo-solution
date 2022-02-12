@@ -27,8 +27,10 @@ $(document).ready(function () {
 
     //add travel script late
     let travelFrameContainer = $('#travelIFrameContainer');
-    travelFrameContainer.html('<iframe class="w-100 border-0 position-relative" id="travelIFrame" loading="lazy"' +
-        ' src="https://www.travelpayouts.com/widgets/444787d409cef89cd87f886bad23ab52.html?v=2178">\n' +
-        '        </iframe>');
+    if (travelFrameContainer.length() > 1) {
+        travelFrameContainer.html('<iframe class="w-100 border-0 position-relative" id="travelIFrame" loading="lazy"' +
+            ' src="https://www.travelpayouts.com/widgets/444787d409cef89cd87f886bad23ab52.html?v=2178">\n' +
+            '        </iframe>');
+    }
 
 });

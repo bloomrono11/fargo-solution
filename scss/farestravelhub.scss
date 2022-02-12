@@ -1,0 +1,213 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+@import "scrollbar";
+@import "custom-variables";
+$url-intro: "../img/farestravelhub/intro.jpg";
+$url-end: "../img/farestravelhub/footer.jpg";
+
+$about-us-link-color: #DE1717;
+$about-us-link-hover-color: #b73434;
+$about-us-card-border-color: #b73434;
+
+@import "basic-web-page";
+/* BOX SHADOW
+- usage: @include box-shadow; or @include box-shadow(0, 2px, 2px, #333);
+*/
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: #333) {
+  box-shadow: $x-axis $y-axis $blur $color;
+}
+
+.img-gallery {
+  img {
+    min-height: 300px !important;
+    max-height: 500px !important;
+    border: 2px dashed #827f7f;
+    border-radius: 0.25rem;
+  }
+
+  div.mask {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: end !important;
+    align-items: center !important;
+    padding-bottom: .75rem;
+
+    p {
+      width: 95%;
+      text-align: center;
+      margin: .25rem 0;
+      padding: .5rem 0;
+      @include box-shadow(0, 1px, 5px, #333);
+
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#contentContainer {
+  font-family: "Courier New", serif;
+  font-size: 0.9rem;
+
+  .container-blue {
+    background-color: #F5F9FF;
+  }
+
+  .container-blue, .container-plain {
+    width: auto;
+    min-height: 15vh;
+    padding: 2rem;
+  }
+
+  h1.header {
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+
+    &:before {
+      content: "[";
+    }
+
+    &:after {
+      content: "]";
+    }
+
+    &:before, &:after {
+      color: #ffab00;
+    }
+  }
+}
+
+#featureContainer {
+  font-family: "Consolas", serif;
+  font-size: 0.9rem;
+
+  .container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .underline-holder {
+    text-align: left !important;
+    display: flex;
+
+    span {
+      border: 2px solid rgba(99, 115, 129, 0.34);
+      width: 15%;
+    }
+  }
+
+  h1.header {
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+
+  h2.header-2 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  h1.header, .underline-holder {
+    margin: .5rem 0;
+  }
+
+  h2.header-2, p {
+    margin: .25rem 0;
+  }
+}
+
+#aboutUsContentContainer {
+  .about-us-blue {
+    background-color: #F3F8FFCF;
+    padding: 2rem;
+  }
+
+  p {
+    background-color: white;
+    color: #111111;
+  }
+
+  @media (min-width: 900px) {
+    .left-margin {
+      margin-left: -2rem;
+    }
+
+    .right-margin {
+      margin-right: -2rem;
+    }
+
+    .margin-top {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.z-index-5 {
+  z-index: 5 !important;
+}
+
+.btn-danger-hover {
+  border: 2px solid transparent;
+  font-weight: bold;
+  width: 50% !important;
+  text-align: center;
+
+  i {
+    margin-right: .5rem;
+  }
+
+  &:hover {
+    i {
+      color: $danger-color-dark !important;
+    }
+
+    color: $danger-color-dark !important;
+    background-color: $white !important;
+    border-color: $danger-color-dark !important;
+  }
+}
+
+.modal-content {
+  i.modal-border {
+    border: 2px solid $danger-color-dark;
+    padding: 1.5rem;
+    border-radius: 4.5rem;
+  }
+
+  i.border-modal-success {
+    border: 2px solid $success-color-dark;
+    color: $success-color-dark !important;
+    padding: 0.75rem 1rem;
+    border-radius: 2.5rem;
+  }
+
+  .heading {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  div.header {
+    font-size: 1.25rem;
+
+    p.p-odd {
+      color: $success-color-dark;
+    }
+
+    p.p-even {
+      color: $primary-color-dark;
+    }
+  }
+
+  .img-modal {
+    width: 25% !important;
+    height: auto;
+    max-height: 20vh !important;
+    border-radius: 100%;
+  }
+}
