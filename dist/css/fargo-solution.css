@@ -6908,6 +6908,85 @@ a.btn:not([href]):not([tabindex]):hover {
     .navbar.navbar-orange form .md-form .form-control::placeholder {
       color: #000;
       font-weight: 300; }
+  .navbar.navbar-orange-secondary .navbar-nav .nav-item .nav-link.disbled, .navbar.navbar-orange-secondary .navbar-nav .custom-nav-item .nav-link.disbled, .navbar.navbar-orange-secondary .navbar-nav .nav-item .disbled.social-nav-link, .navbar.navbar-orange-secondary .navbar-nav .custom-nav-item .disbled.social-nav-link {
+    color: rgba(0, 0, 0, 0.3); }
+    .navbar.navbar-orange-secondary .navbar-nav .nav-item .nav-link.disbled:hover, .navbar.navbar-orange-secondary .navbar-nav .custom-nav-item .nav-link.disbled:hover, .navbar.navbar-orange-secondary .navbar-nav .nav-item .disbled.social-nav-link:hover, .navbar.navbar-orange-secondary .navbar-nav .custom-nav-item .disbled.social-nav-link:hover {
+      color: rgba(0, 0, 0, 0.3); }
+  .navbar.navbar-orange-secondary .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    cursor: pointer; }
+  .navbar.navbar-orange-secondary .breadcrumb .nav-item .nav-link, .navbar.navbar-orange-secondary .breadcrumb .custom-nav-item .nav-link, .navbar.navbar-orange-secondary .breadcrumb .nav-item .social-nav-link, .navbar.navbar-orange-secondary .breadcrumb .custom-nav-item .social-nav-link,
+  .navbar.navbar-orange-secondary .navbar-nav .nav-item .nav-link,
+  .navbar.navbar-orange-secondary .navbar-nav .custom-nav-item .nav-link,
+  .navbar.navbar-orange-secondary .navbar-nav .nav-item .social-nav-link,
+  .navbar.navbar-orange-secondary .navbar-nav .custom-nav-item .social-nav-link {
+    color: #000;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+    border-bottom: 1px solid orange;
+    border-color: transparent; }
+    .navbar.navbar-orange-secondary .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-orange-secondary .breadcrumb .custom-nav-item .nav-link:hover, .navbar.navbar-orange-secondary .breadcrumb .nav-item .social-nav-link:hover, .navbar.navbar-orange-secondary .breadcrumb .custom-nav-item .social-nav-link:hover,
+    .navbar.navbar-orange-secondary .navbar-nav .nav-item .nav-link:hover,
+    .navbar.navbar-orange-secondary .navbar-nav .custom-nav-item .nav-link:hover,
+    .navbar.navbar-orange-secondary .navbar-nav .nav-item .social-nav-link:hover,
+    .navbar.navbar-orange-secondary .navbar-nav .custom-nav-item .social-nav-link:hover {
+      color: #ea7300;
+      border-bottom: 1px solid orange;
+      border-color: #ea7300; }
+  .navbar.navbar-orange-secondary .breadcrumb .nav-item.active > .nav-link, .navbar.navbar-orange-secondary .breadcrumb .active.custom-nav-item > .nav-link, .navbar.navbar-orange-secondary .breadcrumb .nav-item.active > .social-nav-link, .navbar.navbar-orange-secondary .breadcrumb .active.custom-nav-item > .social-nav-link,
+  .navbar.navbar-orange-secondary .navbar-nav .nav-item.active > .nav-link,
+  .navbar.navbar-orange-secondary .navbar-nav .active.custom-nav-item > .nav-link,
+  .navbar.navbar-orange-secondary .navbar-nav .nav-item.active > .social-nav-link,
+  .navbar.navbar-orange-secondary .navbar-nav .active.custom-nav-item > .social-nav-link {
+    background-color: rgba(199, 101, 41, 0.71);
+    border-bottom: 1px solid orange; }
+    .navbar.navbar-orange-secondary .breadcrumb .nav-item.active > .nav-link span, .navbar.navbar-orange-secondary .breadcrumb .active.custom-nav-item > .nav-link span, .navbar.navbar-orange-secondary .breadcrumb .nav-item.active > .social-nav-link span, .navbar.navbar-orange-secondary .breadcrumb .active.custom-nav-item > .social-nav-link span,
+    .navbar.navbar-orange-secondary .navbar-nav .nav-item.active > .nav-link span,
+    .navbar.navbar-orange-secondary .navbar-nav .active.custom-nav-item > .nav-link span,
+    .navbar.navbar-orange-secondary .navbar-nav .nav-item.active > .social-nav-link span,
+    .navbar.navbar-orange-secondary .navbar-nav .active.custom-nav-item > .social-nav-link span {
+      left: 45% !important;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      content: "";
+      color: #fd7e14;
+      border-bottom: .3em solid;
+      border-right: .3em solid transparent;
+      border-top: 0;
+      border-left: .3em solid transparent;
+      position: absolute !important;
+      bottom: 0 !important; }
+    .navbar.navbar-orange-secondary .breadcrumb .nav-item.active > .nav-link:hover, .navbar.navbar-orange-secondary .breadcrumb .active.custom-nav-item > .nav-link:hover, .navbar.navbar-orange-secondary .breadcrumb .nav-item.active > .social-nav-link:hover, .navbar.navbar-orange-secondary .breadcrumb .active.custom-nav-item > .social-nav-link:hover,
+    .navbar.navbar-orange-secondary .navbar-nav .nav-item.active > .nav-link:hover,
+    .navbar.navbar-orange-secondary .navbar-nav .active.custom-nav-item > .nav-link:hover,
+    .navbar.navbar-orange-secondary .navbar-nav .nav-item.active > .social-nav-link:hover,
+    .navbar.navbar-orange-secondary .navbar-nav .active.custom-nav-item > .social-nav-link:hover {
+      color: #000; }
+  .navbar.navbar-orange-secondary .navbar-toggler {
+    color: #000; }
+  .navbar.navbar-orange-secondary form .md-form input {
+    border-bottom: 1px solid #000; }
+    .navbar.navbar-orange-secondary form .md-form input:focus:not([readonly]) {
+      border-color: #4285f4; }
+  .navbar.navbar-orange-secondary form .md-form .form-control {
+    color: #000; }
+    .navbar.navbar-orange-secondary form .md-form .form-control::-webkit-input-placeholder {
+      color: #000;
+      font-weight: 300; }
+    .navbar.navbar-orange-secondary form .md-form .form-control::-moz-placeholder {
+      color: #000;
+      font-weight: 300; }
+    .navbar.navbar-orange-secondary form .md-form .form-control:-ms-input-placeholder {
+      color: #000;
+      font-weight: 300; }
+    .navbar.navbar-orange-secondary form .md-form .form-control::-ms-input-placeholder {
+      color: #000;
+      font-weight: 300; }
+    .navbar.navbar-orange-secondary form .md-form .form-control::placeholder {
+      color: #000;
+      font-weight: 300; }
   @media (min-width: 600px) {
     .navbar.scrolling-navbar {
       -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
