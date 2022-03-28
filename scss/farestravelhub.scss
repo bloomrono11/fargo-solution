@@ -11,6 +11,8 @@ $about-us-link-color: #DE1717;
 $about-us-link-hover-color: #b73434;
 $about-us-card-border-color: #b73434;
 
+$unique-color-pink: #8B0000;
+
 @import "basic-web-page";
 /* BOX SHADOW
 - usage: @include box-shadow; or @include box-shadow(0, 2px, 2px, #333);
@@ -175,7 +177,8 @@ $about-us-card-border-color: #b73434;
 
 .modal-content {
   i.modal-border {
-    border: 2px solid $danger-color-dark;
+    color: $unique-color-pink;
+    border: 2px solid $unique-color-pink;
     padding: 1.5rem;
     border-radius: 4.5rem;
   }
@@ -196,11 +199,11 @@ $about-us-card-border-color: #b73434;
     font-size: 1.25rem;
 
     p.p-odd {
-      color: $success-color-dark;
+      color: black;
     }
 
     p.p-even {
-      color: $primary-color-dark;
+      color: $unique-color-pink;
     }
   }
 
@@ -209,5 +212,67 @@ $about-us-card-border-color: #b73434;
     height: auto;
     max-height: 20vh !important;
     border-radius: 100%;
+  }
+}
+
+.modal-dialog-full-width {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+
+}
+
+.modal-content-full-width {
+  height: auto !important;
+  min-height: 100% !important;
+  border-radius: 0 !important;
+  background-color: #ececec !important
+}
+
+.modal-header-full-width {
+  border-bottom: 1px solid #9ea2a2 !important;
+}
+
+.modal-footer-full-width {
+  border-top: 1px solid #9ea2a2 !important;
+}
+
+.unique-color-text {
+  color: $unique-color-pink;
+}
+
+.modal-header-full-width, .modal-footer-full-width {
+  background: $unique-color-pink !important;
+
+  .heading {
+    font-size: 2rem!important;
+  }
+}
+
+.modal-body {
+  div.row {
+    height: 20vh;
+    padding: 1rem 0;
+  }
+
+  .header {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  a.call-btn {
+    color: $unique-color-pink;
+    font-weight: bold;
+  }
+
+}
+
+.modal-footer {
+  p {
+    margin: 0;
+    padding: .25rem 0;
   }
 }

@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $('#modalCallUs').modal('show');
+    $('#modalCallUs').modal('hide');
 });
